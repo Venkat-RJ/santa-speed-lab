@@ -1,0 +1,7 @@
+{
+  "meanTokensPerSecond": 818.2655378411835,
+  "p90TokensPerSecond": 820.7837512826065,
+  "outputTokens": 638,
+  "generationMs": 778.479281,
+  "calls": 2
+}

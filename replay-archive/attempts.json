@@ -1,0 +1,2693 @@
+[
+  {
+    "id": "run-001",
+    "label": "santa-astra-208-five-arguments/jsonl-five-arguments",
+    "started_utc": "2026-11-22T13:44:45.297000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 1284.8280065965037,
+    "final_call_tps": 1597.725003464298,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 1284.8280065965037,
+      "p90TokensPerSecond": 1597.725003464298,
+      "outputTokens": 630,
+      "generationMs": 585.327766,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-001.json",
+    "recordings": [
+      "clip-009",
+      "clip-050"
+    ],
+    "milestone": "original-500",
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "86c1a576de4a649d147c1747276e516153c548e638f9b46e1f9994e986cec77d",
+      "official-speed.json": "bae60e5d1ae710e5cc5a08de743540914d99c84900fdfe07e96b33c578571801",
+      "response-status.jsonl": "56aa19096f8ec76c33607b22d6d13757a38d4f2f95dd85eae99d4abc126c1a50",
+      "provider-stream-receipts.jsonl": "a1a1802fc923f5a9be69a449a50d39de146fec8a58422a73ba324023a69ebefd"
+    },
+    "process_exit_code": 0,
+    "milestone_receipts": "milestones/original-500",
+    "openclaw_commit": "94043a69f5fc1e1fc1def41b32bce744a2e5add0",
+    "protected_files_checked": 25
+  },
+  {
+    "id": "run-002",
+    "label": "santa-astra-208-replay-500/jsonl-replay-500",
+    "started_utc": "2026-11-22T13:45:24.697000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 972.9544636472667,
+    "final_call_tps": 1319.4169354471205,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 972.9544636472667,
+      "p90TokensPerSecond": 1319.4169354471205,
+      "outputTokens": 692,
+      "generationMs": 973.7916680000001,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-002.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "f55d5e76e7fb2f80ac425366f5e52269b56b90afc4c31a4ccc3c7501c004f441",
+      "official-speed.json": "2b8c32c51e01cd996a070a1b8a833ea5e81e98c6769a5b9e9fa622959cd64728",
+      "response-status.jsonl": "894ce32f82991736094007a3ecde3fabb5e7a143f657cda44517f70e4e41c5f5",
+      "provider-stream-receipts.jsonl": "23e6a87dd13b0c9a59353530989f9fd633879fae319e08ee2e4551ddb021dae5"
+    },
+    "process_exit_code": 0
+  },
+  {
+    "id": "run-003",
+    "label": "santa-astra-208-five-arguments-cap1024/jsonl-cap1024",
+    "started_utc": "2026-11-22T13:46:31.422000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 1038.261994832086,
+    "final_call_tps": 1196.135048431508,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 1038.261994832086,
+      "p90TokensPerSecond": 1196.135048431508,
+      "outputTokens": 706,
+      "generationMs": 750.046736,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3,
+        "maxTokens": 1024
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-003.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "0c728c8ee1a1fb5e71fbcdedea7946cb8bb93b1bcd6b06c80fb41402ab513b9a",
+      "command.json": "fbab2525f54b0f3b5af6f338a3a4c78cc1c8a8ddabf9fc3d85936802f4b1f53c",
+      "official-speed.json": "7177d83e8dafce126df0a1ed356031567be20742a6f755c095b0756033ed39b3",
+      "response-status.jsonl": "b0315af6c94385fa682e2250c8ad233491518be7551cf13e13c6adc8c4c79254",
+      "provider-stream-receipts.jsonl": "75bc7a20bbd07a18f3c16c08cd689ba3cd408e21e358354e3fd96ba34aadeb10"
+    },
+    "process_exit_code": 0
+  },
+  {
+    "id": "run-004",
+    "label": "santa-astra-208-wrapped-retail-json/jsonl-wrapped-retail-json",
+    "started_utc": "2026-11-22T13:59:17.811000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 705.0998247988939,
+    "final_call_tps": 645.6464045009876,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 705.099824798894,
+      "p90TokensPerSecond": 764.5532450968004,
+      "outputTokens": 674,
+      "generationMs": 924.919339,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-004.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "f82ab04cca85eca2d7b7a79ae2d7ff88dcfa05580b871359767c69f3cbd3ba0a",
+      "official-speed.json": "33378f1155158a9ee377607bc76d234cdc44b3813c93f98308811a51d78e9567",
+      "response-status.jsonl": "6811c54d4f268105f8cfd2fcfd2d45155abf17ca5277b3548086f61e7faa5391",
+      "provider-stream-receipts.jsonl": "4d0ad1734b306e678a609af89779a82557f9301bf05ad319185485e6de84fbe3"
+    },
+    "process_exit_code": 0
+  },
+  {
+    "id": "run-005",
+    "label": "santa-astra-208-full-retail-json/jsonl-full-retail-json",
+    "started_utc": "2026-11-22T14:01:54.354000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "incomplete-or-rate-limited",
+    "timed_calls": 1,
+    "observed_mean_tps": 905.8854819474575,
+    "final_call_tps": null,
+    "verified_products": 0,
+    "official_score": {
+      "meanTokensPerSecond": 905.8854819474575,
+      "p90TokensPerSecond": 905.8854819474575,
+      "outputTokens": 519,
+      "generationMs": 572.9200989999999,
+      "calls": 1
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-005.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "655b5f2e9d60ac1edcf3da3682d2863f37f7b26f50e580c212975c043a722290",
+      "official-speed.json": "e813423beedcd7c0081e693842e5404b558bf4b1c7ea6e63d1b56558b48d4bb6",
+      "response-status.jsonl": "0820932c71ca6bbb570b41f677d11d879301493a2fd7c7796e441eb6c14db492",
+      "provider-stream-receipts.jsonl": "f12e57e0cd3d13d5a2fa38ab6ad633c91f7fb52d90263fbb387963cf02b06e38"
+    },
+    "process_exit_code": 124
+  },
+  {
+    "id": "run-006",
+    "label": "santa-astra-208-five-arguments-temp-zero/jsonl-temp-zero",
+    "started_utc": "2026-11-22T14:07:13.323000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "incomplete-or-rate-limited",
+    "timed_calls": 0,
+    "observed_mean_tps": null,
+    "final_call_tps": null,
+    "verified_products": 0,
+    "official_score": null,
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-006.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "c8cf9a35c66f0d83ce36c15c5ae549be3338f84725cd661d76c869508ed4dd0b",
+      "command.json": "9ffa912ccfc1b625fa5a0cae55420cb0af8d5809fd8ef8d79008f9ac063871dc",
+      "official-speed.json": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "response-status.jsonl": "d4ecc314378b445482bf31cc502d8069587adf15bce98108505b8b13a9a114cb"
+    },
+    "process_exit_code": 124
+  },
+  {
+    "id": "run-007",
+    "label": "santa-astra-208-required-discovery/jsonl-required-discovery",
+    "started_utc": "2026-11-22T14:13:31.626000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 918.0887884210177,
+    "final_call_tps": 978.1507088163646,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 918.0887884210177,
+      "p90TokensPerSecond": 978.1507088163646,
+      "outputTokens": 684,
+      "generationMs": 771.558043,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-007.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "e684d7ea2711cda1e8c703eb1d4d43dc4bf76eec6c091faa37ce06aeedac4ecd",
+      "official-speed.json": "ce6833b225e55d7a27b9f8abd8de3d555a29a8004cd59a47b3812b746e987df0",
+      "response-status.jsonl": "def9a51e2767f90495d6ad028c6bcec7b47d33af8e2604af30b5b6aa7d604e2d",
+      "provider-stream-receipts.jsonl": "dd45dc77e2076b1380df1d6e7f159c189eb6e99d955b5a1c14ea49fdc91ae184"
+    },
+    "process_exit_code": 0
+  },
+  {
+    "id": "run-008",
+    "label": "santa-astra-208-temp-zero-queue-retry/jsonl-temp-zero-retry",
+    "started_utc": "2026-11-22T14:17:34.967000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "incomplete-or-rate-limited",
+    "timed_calls": 1,
+    "observed_mean_tps": 711.6294485782894,
+    "final_call_tps": null,
+    "verified_products": 0,
+    "official_score": {
+      "meanTokensPerSecond": 711.6294485782894,
+      "p90TokensPerSecond": 711.6294485782894,
+      "outputTokens": 549,
+      "generationMs": 771.4689169999999,
+      "calls": 1
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-008.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "c8cf9a35c66f0d83ce36c15c5ae549be3338f84725cd661d76c869508ed4dd0b",
+      "command.json": "4a6c8480f1d74f9f68fcc7ff416c20837c5e01f16f6d508fd4b75b7424019703",
+      "official-speed.json": "df6d3a2d538f6151cf935b2feb5665ab12c330dcba22c98ff38f4565d6603aa1",
+      "response-status.jsonl": "664237cf8d0b2af488fd340c90c3a5aafc4563af8f7e6b87e3c9915fd10cabde",
+      "provider-stream-receipts.jsonl": "14be0adeb72bcd8e11bc890148af8d553f44042ed3daa2b61905d0d285fa94f5"
+    },
+    "process_exit_code": 1
+  },
+  {
+    "id": "run-009",
+    "label": "santa-astra-208-peak-control-1432/jsonl-peak-control",
+    "started_utc": "2026-11-22T14:32:37.717000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "incomplete-or-rate-limited",
+    "timed_calls": 1,
+    "observed_mean_tps": 681.4362567291383,
+    "final_call_tps": null,
+    "verified_products": 0,
+    "official_score": {
+      "meanTokensPerSecond": 681.4362567291382,
+      "p90TokensPerSecond": 681.4362567291382,
+      "outputTokens": 533,
+      "generationMs": 782.171472,
+      "calls": 1
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-009.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "132ec36802f79e471145a3a146629abfa5fce948791f1b48b5b16c0c47eea7d2",
+      "official-speed.json": "b46c0286fea59bfde9e637b3c8afffef2422eb083504f2c72238e9abea955a75",
+      "response-status.jsonl": "04bd34b8681563cf58c1d2fa4bc73131bc8e76ef860bafff5eacbac6b0180831",
+      "provider-stream-receipts.jsonl": "db6d9f6fdce11262237c55875a714f661ba8755d1ab74b9f21d16ca080ceb5e7"
+    },
+    "process_exit_code": 124
+  },
+  {
+    "id": "run-010",
+    "label": "santa-astra-208-nonstreaming/jsonl-nonstreaming",
+    "started_utc": "2026-11-22T14:35:51.384000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 807.6821326995408,
+    "final_call_tps": 610.8355714801143,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 807.6821326995407,
+      "p90TokensPerSecond": 1004.5286939189673,
+      "outputTokens": 665,
+      "generationMs": 783.266296,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-010.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "fba66b37036ad776ba33c41c05c2fffe176487bfc3602ce6ad4adeaf2894c59d",
+      "command.json": "592a23d15e619b0c70d3257bf5b2f696f1ec5bea4a7910452f9fc2cf811db91c",
+      "official-speed.json": "62fd16a2ca3a6d085b6884af8ba8d0a5097d7b38bb065a092c3d6f774aaffd95",
+      "response-status.jsonl": "49fdbf37cb28967aeba0f77643296d169bf58a8a97036e6bd38e9c5d9d13d6a1"
+    },
+    "process_exit_code": 0
+  },
+  {
+    "id": "run-011",
+    "label": "santa-demo-replay-500-20261122-221837/jsonl-demo-replay-500",
+    "started_utc": "2026-11-22T16:48:37.957500+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "setup-only",
+    "timed_calls": 0,
+    "observed_mean_tps": null,
+    "final_call_tps": null,
+    "verified_products": 0,
+    "official_score": null,
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "saved prompt file",
+    "evidence": "evidence/run-011.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82"
+    }
+  },
+  {
+    "id": "run-012",
+    "label": "santa-demo-replay-500-20261122-221837/jsonl-demo-replay-500-clean",
+    "started_utc": "2026-11-22T16:48:48.098000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 1005.2914107611841,
+    "final_call_tps": 1007.852815439671,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 1005.2914107611841,
+      "p90TokensPerSecond": 1007.852815439671,
+      "outputTokens": 675,
+      "generationMs": 672.259971,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-012.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "d2dfbc99eeb511d539689f2506ee65e68f8eaedce83520849b1e26ae15855925",
+      "official-speed.json": "a625d783f9c4f908e28c209849ff47edca28467f87dab685ed89f01b21d006e4",
+      "response-status.jsonl": "7a1c642083c53539167467e0c89eaba952d2c5767fc9fde87a61c5d22c030e94",
+      "provider-stream-receipts.jsonl": "5a03f8f1b29c705d3f7363a4ddc46ec812a11da51c562e838ffe214f0f1808da"
+    },
+    "process_exit_code": 0
+  },
+  {
+    "id": "run-013",
+    "label": "santa-openclaw-dashboard-500.I3GisnTx",
+    "started_utc": "2026-11-22T16:52:28.658000+00:00",
+    "entry_point": "gateway",
+    "status": "incomplete-or-rate-limited",
+    "timed_calls": 1,
+    "observed_mean_tps": 346.68144344415066,
+    "final_call_tps": null,
+    "verified_products": 0,
+    "official_score": null,
+    "settings": {
+      "model": null,
+      "thinking": null,
+      "params": {}
+    },
+    "prompt_evidence": "related capture or launch setup",
+    "evidence": "evidence/run-013.json",
+    "recordings": [],
+    "source_hashes": {}
+  },
+  {
+    "id": "run-014",
+    "label": "santa-openclaw-dashboard-exact-500.nU7qUuRB",
+    "started_utc": "2026-11-22T16:56:39.569000+00:00",
+    "entry_point": "gateway",
+    "status": "shopping-or-timing-unverified",
+    "timed_calls": 2,
+    "observed_mean_tps": 531.8647494431132,
+    "final_call_tps": 323.643047734958,
+    "verified_products": 0,
+    "official_score": {
+      "meanTokensPerSecond": 531.8647494431132,
+      "p90TokensPerSecond": 740.0864511512683,
+      "outputTokens": 859,
+      "generationMs": 1790.059393,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3,
+        "maxTokens": 1536
+      }
+    },
+    "prompt_evidence": "saved prompt file",
+    "evidence": "evidence/run-014.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "3764f268edd8ea9b447c98baf2e9af3cf007bbc13881a98dad477ff961794f23",
+      "official-speed.json": "dc5c9b4bf4e91742367036ccacb556cce6d9b9c77fe1e7f48de05cda02ebd450",
+      "response-status.jsonl": "d71c95e782b9c5c2b9b1657e407a02f861caf1d2e595e1e8559caa7f71aac84f",
+      "provider-stream-receipts.jsonl": "257b2c4c1962addb472b9572921677351016af4b16b016c2be2a234b2746349c"
+    }
+  },
+  {
+    "id": "run-015",
+    "label": "santa-public-reproduction-500-20261122-230432-31760",
+    "started_utc": "2026-11-22T17:34:32.709425+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "incomplete-or-rate-limited",
+    "timed_calls": 0,
+    "observed_mean_tps": null,
+    "final_call_tps": null,
+    "verified_products": 0,
+    "official_score": null,
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "saved prompt file",
+    "evidence": "evidence/run-015.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "1c87b7bc38bfabe0e1d900109a153c038853394e17b35f441e1f7bf4cf5cb8be",
+      "response-status.jsonl": "0a23b64db3ef62e74f015b5c3fd0b333949bda94d8b96bdaba3eac781204fb88",
+      "provider-stream-receipts.jsonl": "db179aee67c28adb60513030aaca7ca033cb36e31bd0dc3daa3c9b100dae45f7"
+    }
+  },
+  {
+    "id": "run-016",
+    "label": "santa-public-reproduction-500-20261122-230751-b8e29",
+    "started_utc": "2026-11-22T17:38:01.509000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 918.2411523387393,
+    "final_call_tps": 1077.392257870069,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 918.2411523387393,
+      "p90TokensPerSecond": 1077.392257870069,
+      "outputTokens": 666,
+      "generationMs": 807.6995179999999,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-016.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "07acb500803e27ce65f9f0e0c395003a3cb534ed5e1d31c4e418f441e2bf42f7",
+      "official-speed.json": "df051fa160e19e1354796e39628d05b5de942af1c9489edbf66d6ea8ebb546e7",
+      "response-status.jsonl": "608d1075b49a6fc212911f8cffc055ee8ad7ee090c3cfac3e53e50a551e9d5c3",
+      "provider-stream-receipts.jsonl": "46fe09b5590e3a44605867ee7aa5e9c58cbb6b0675f8fd0c7ddca343e8b35d7b"
+    }
+  },
+  {
+    "id": "run-017",
+    "label": "santa-exp500-repeat-20261122-230954-20661/run-01",
+    "started_utc": "2026-11-22T17:40:03.879000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 559.3900028755193,
+    "final_call_tps": 579.7834870718364,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 559.3900028755193,
+      "p90TokensPerSecond": 579.7834870718364,
+      "outputTokens": 759,
+      "generationMs": 1384.679163,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-017.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "6f5aa38d3ee06635cdc1ac16e97b9d5c50c5410459584abbf1e44bfb697a5d30",
+      "official-speed.json": "90235f3f3d60ec386186d928fb9e2245470376457119e5722af5a6226307adf4",
+      "response-status.jsonl": "d6a6f7c0cf019591f183c9ef7f7fe1bd779c0113a7608c05c870bde3e6cd7f19",
+      "provider-stream-receipts.jsonl": "2463fe7ecfdd8bd2ae8b5b6b27ac252212de91d9e31a78521de0d4cfbbcc0259"
+    }
+  },
+  {
+    "id": "run-018",
+    "label": "santa-exp500-repeat-20261122-230954-20661/run-02",
+    "started_utc": "2026-11-22T17:42:50.963000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 729.9943250765347,
+    "final_call_tps": 712.4374245207553,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 729.9943250765346,
+      "p90TokensPerSecond": 747.551225632314,
+      "outputTokens": 647,
+      "generationMs": 876.898604,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-018.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "67c2021afa82879935a22ee0f22d316aa5c831b459cd557d791912acbe6b6d30",
+      "official-speed.json": "a840b94a43c87ba498f9f58f659fee87a315697e372b826e47175213f4f937f4",
+      "response-status.jsonl": "5b55f6c152cef719b175c4fc05db4117814a67441b8af42d4dd2fdb3eb1345e5",
+      "provider-stream-receipts.jsonl": "857b1888189e6fb8b1fd76b06c20838c7997d554162c381b50b110c866c6afa3"
+    }
+  },
+  {
+    "id": "run-019",
+    "label": "santa-exp500-repeat-20261122-230954-20661/run-03",
+    "started_utc": "2026-11-22T17:43:35.724000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 728.4744993708437,
+    "final_call_tps": 688.6154575436916,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 728.4744993708437,
+      "p90TokensPerSecond": 768.3335411979957,
+      "outputTokens": 674,
+      "generationMs": 905.248036,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-019.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "08cea7d32bd9c06fc7d544c6111cdf51d2726b3a03f8b592bb1d566e7341a7a9",
+      "official-speed.json": "09de050d95633d06c1e3cb688eb51026ce177847b65fd60596c3b3d67e72f681",
+      "response-status.jsonl": "14b5c4818ad666e06171216763e800dc7d76fa107af4f626d33b27502a53fc0c",
+      "provider-stream-receipts.jsonl": "5aa5b3fe65a56e32bdc279aec5b0d3b6f8ecf8c069f5f71a21c8a11d52420555"
+    }
+  },
+  {
+    "id": "run-020",
+    "label": "santa-exp500-repeat-20261122-230954-20661/run-04",
+    "started_utc": "2026-11-22T17:45:35.141000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 852.8222720866651,
+    "final_call_tps": 882.6643548642164,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 852.8222720866651,
+      "p90TokensPerSecond": 882.6643548642164,
+      "outputTokens": 724,
+      "generationMs": 864.693805,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-020.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "7c6155d5f1e34399a9abe31128f5fbf98406c837c3bd23888a893149114281c6",
+      "official-speed.json": "35dd501cd55fd24fbc2d5cb98e240e79fafe3de112f5a92d8129fd717aea0685",
+      "response-status.jsonl": "7b36edc8889a7b7350c249709577fdfef5e76cc605a5d25ae2a072215b2291fa",
+      "provider-stream-receipts.jsonl": "10f31cb42f8d375a383c90f6f80089da5871498152cd849c4b9738e69bc981c2"
+    }
+  },
+  {
+    "id": "run-021",
+    "label": "santa-exp500-repeat-20261122-230954-20661/run-05",
+    "started_utc": "2026-11-22T17:48:35.655903+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "incomplete-or-rate-limited",
+    "timed_calls": 0,
+    "observed_mean_tps": null,
+    "final_call_tps": null,
+    "verified_products": 0,
+    "official_score": null,
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "saved prompt file",
+    "evidence": "evidence/run-021.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "77145af632d60316f3c373d1c99b7316055442b1c92adb340decbf1011e43fe1",
+      "response-status.jsonl": "2853b3baeea97024b1959645a12b6dd11c7449f9368e529dc4327c0bb73dc3fd",
+      "provider-stream-receipts.jsonl": "c944252b11a9370ab93d62566c8904a5e440292f827dba0d84631113bc1a5195"
+    }
+  },
+  {
+    "id": "run-022",
+    "label": "santa-exp500-repeat-20261122-230954-20661/run-06",
+    "started_utc": "2026-11-22T17:52:01.211000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 692.5546146485444,
+    "final_call_tps": 708.9183744703442,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 692.5546146485444,
+      "p90TokensPerSecond": 708.9183744703442,
+      "outputTokens": 703,
+      "generationMs": 1028.996752,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-022.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "88e9da97ca4e849e912c54d786b6b6dd1c1cbdd9426964913ff6f0379719817a",
+      "official-speed.json": "e4a8d1924ca66de4b9ba20854c5302d8c5d68bc838b875208bbf627d378883a6",
+      "response-status.jsonl": "e91d6d0e0b302e51085244e7430e37d50bd09ccd3cfa8c4397030bb6f02dba46",
+      "provider-stream-receipts.jsonl": "385e3f47a241c71c72be9aa505acb1872cce055e8e0d2344b38a4c4f934db56e"
+    }
+  },
+  {
+    "id": "run-023",
+    "label": "santa-claims-20261122-234030",
+    "started_utc": "2026-11-22T18:10:40.616000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 828.7603522813797,
+    "final_call_tps": 1067.505588496121,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 828.7603522813797,
+      "p90TokensPerSecond": 1067.505588496121,
+      "outputTokens": 717,
+      "generationMs": 1079.521666,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-023.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "dd22ed269338001122f6ef240544c4baeef214db2dfe8437a02d638efb389870",
+      "official-speed.json": "0023488e6ef52339fe6fec62ba476f6164b91055e1b4f3df66a8048d12731d04",
+      "response-status.jsonl": "4b2161d9dea169df883cec9896d1daceae77f5b9f1be57caa9f7b3a1b1ae2984",
+      "provider-stream-receipts.jsonl": "69ba2392284d970383e6d139ab80665684178c27aa4cb3164ab6a873fd9d826e"
+    }
+  },
+  {
+    "id": "run-024",
+    "label": "santa-best-once-20261122-234418",
+    "started_utc": "2026-11-22T18:14:28.912000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 857.6361902349048,
+    "final_call_tps": 1062.225756329418,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 857.6361902349048,
+      "p90TokensPerSecond": 1062.225756329418,
+      "outputTokens": 687,
+      "generationMs": 943.457151,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-024.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "68242575a5d620b3dd2fe00c470231f25853309e77af556f7fcd478289d3c513",
+      "official-speed.json": "8649f721d0c73d30408960b4df19473f60c045e35393fd5be69323571d6e307e",
+      "response-status.jsonl": "d43b4f8f2e16158bd9709f101d2671bd8ccdc6e16fb61bcbdf5a1dd109550bcf",
+      "provider-stream-receipts.jsonl": "f58eab06200594855e3bd59b0f198e26064e902d6e9bffb1f1207c8ac1bcba88"
+    }
+  },
+  {
+    "id": "run-025",
+    "label": "santa-500-final-recheck-20261122-234826",
+    "started_utc": "2026-11-22T18:18:37.453000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 666.7621102917042,
+    "final_call_tps": 678.4531512090643,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 666.7621102917042,
+      "p90TokensPerSecond": 678.4531512090645,
+      "outputTokens": 678,
+      "generationMs": 1025.637481,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-025.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "e92ff32bd4bef5abd359cc431131e03dcc8d4618f1db34b3fc0f370625b507bc",
+      "official-speed.json": "a470644ca36473bad75197d846ec9e16275e3c4c746ebc10702be109dc23f310",
+      "response-status.jsonl": "4a720d5f77444b125574752ebcff7397a2ebd9cb424394822e31ab808af864f7",
+      "provider-stream-receipts.jsonl": "b3546473243f475026ac8f716435b9cb172e142a0a936482e9580a2605566ed4"
+    }
+  },
+  {
+    "id": "run-026",
+    "label": "santa-ui-live-W3stZp/initial-navigation",
+    "started_utc": "2026-11-22T18:24:46.807872+00:00",
+    "entry_point": "gateway",
+    "status": "setup-only",
+    "timed_calls": 0,
+    "observed_mean_tps": null,
+    "final_call_tps": null,
+    "verified_products": 0,
+    "official_score": null,
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "related capture or launch setup",
+    "evidence": "evidence/run-026.json",
+    "recordings": [
+      "clip-001"
+    ],
+    "source_hashes": {}
+  },
+  {
+    "id": "run-027",
+    "label": "santa-ui-live-W3stZp/trial-1",
+    "started_utc": "2026-11-22T18:25:32.428000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 751.2551695562393,
+    "final_call_tps": 795.8157812936489,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 751.2551695562393,
+      "p90TokensPerSecond": 795.8157812936489,
+      "outputTokens": 736,
+      "generationMs": 1012.152068,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-027.json",
+    "recordings": [
+      "clip-002"
+    ],
+    "source_hashes": {
+      "official-speed.json": "c45bf634eb6989382ff9de97702be1131a06f55deb08c11e466f04d7ac2f85e1"
+    }
+  },
+  {
+    "id": "run-028",
+    "label": "santa-ui-live-W3stZp/trial-2",
+    "started_utc": "2026-11-22T18:26:38.436000+00:00",
+    "entry_point": "gateway",
+    "status": "cached-retail-results",
+    "timed_calls": 2,
+    "observed_mean_tps": 746.1673920814701,
+    "final_call_tps": 655.4871081350861,
+    "verified_products": 0,
+    "official_score": {
+      "meanTokensPerSecond": 746.1673920814701,
+      "p90TokensPerSecond": 836.847676027854,
+      "outputTokens": 653,
+      "generationMs": 838.829439,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-028.json",
+    "recordings": [
+      "clip-003"
+    ],
+    "source_hashes": {
+      "official-speed.json": "c7ee2dcb07c4db3695e4415283020d606cae5db350caa131777933bf52bc01e3"
+    }
+  },
+  {
+    "id": "run-029",
+    "label": "santa-ui-live-W3stZp/trial-3",
+    "started_utc": "2026-11-22T18:27:04.356000+00:00",
+    "entry_point": "gateway",
+    "status": "cached-retail-results",
+    "timed_calls": 2,
+    "observed_mean_tps": 821.3518865971494,
+    "final_call_tps": 771.8141971761714,
+    "verified_products": 0,
+    "official_score": {
+      "meanTokensPerSecond": 821.3518865971494,
+      "p90TokensPerSecond": 870.8895760181272,
+      "outputTokens": 651,
+      "generationMs": 773.158682,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-029.json",
+    "recordings": [
+      "clip-004"
+    ],
+    "source_hashes": {
+      "official-speed.json": "6f9aed697336bad8b2937a96cb558f5f450aab1641a5f464514354765198e84c"
+    }
+  },
+  {
+    "id": "run-030",
+    "label": "santa-ui-fresh-jhqIr0/pre-connect",
+    "started_utc": "2026-11-22T18:27:27.678719+00:00",
+    "entry_point": "gateway",
+    "status": "setup-only",
+    "timed_calls": 0,
+    "observed_mean_tps": null,
+    "final_call_tps": null,
+    "verified_products": 0,
+    "official_score": null,
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "related capture or launch setup",
+    "evidence": "evidence/run-030.json",
+    "recordings": [
+      "clip-005"
+    ],
+    "source_hashes": {}
+  },
+  {
+    "id": "run-031",
+    "label": "santa-ui-fresh-jhqIr0/trial-1",
+    "started_utc": "2026-11-22T18:28:26.705000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 791.8623525012187,
+    "final_call_tps": 939.538635541504,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 791.8623525012188,
+      "p90TokensPerSecond": 939.538635541504,
+      "outputTokens": 708,
+      "generationMs": 1012.198342,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-031.json",
+    "recordings": [
+      "clip-006"
+    ],
+    "source_hashes": {
+      "official-speed.json": "9fb23e71891b9aeafe20badc14e852c7cfd79ce714fa94ad31fd5dca35a38278"
+    }
+  },
+  {
+    "id": "run-032",
+    "label": "santa-ui-fresh-jhqIr0/trial-2",
+    "started_utc": "2026-11-22T18:29:39.384000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 799.5242850718306,
+    "final_call_tps": 684.9699802748792,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 799.5242850718307,
+      "p90TokensPerSecond": 914.078589868782,
+      "outputTokens": 665,
+      "generationMs": 795.9356310000001,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-032.json",
+    "recordings": [
+      "clip-007"
+    ],
+    "source_hashes": {
+      "official-speed.json": "614e5957546b820d80d3d97a26230d94f7d01824696033c61306b887f6984c88"
+    }
+  },
+  {
+    "id": "run-033",
+    "label": "santa-ui-fresh-jhqIr0/trial-3",
+    "started_utc": "2026-11-22T18:30:53.773000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 818.1501661372167,
+    "final_call_tps": 763.2675959592848,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 818.1501661372166,
+      "p90TokensPerSecond": 873.0327363151486,
+      "outputTokens": 690,
+      "generationMs": 820.492876,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-033.json",
+    "recordings": [
+      "clip-008"
+    ],
+    "source_hashes": {
+      "official-speed.json": "43ecec861de94b9364aa7250c7229ffc35718c7291307aaf44f6906d7987c18d"
+    }
+  },
+  {
+    "id": "run-034",
+    "label": "santa-astra-208-five-arguments/ui-companion-20261123-000152",
+    "started_utc": "2026-11-22T18:31:52.698617+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "setup-only",
+    "timed_calls": 0,
+    "observed_mean_tps": null,
+    "final_call_tps": null,
+    "verified_products": 0,
+    "official_score": null,
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "saved prompt file",
+    "evidence": "evidence/run-034.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82"
+    }
+  },
+  {
+    "id": "run-035",
+    "label": "santa-astra-208-five-arguments/ui-companion-cli-20261123-000156",
+    "started_utc": "2026-11-22T18:32:02.726000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 1043.509784860833,
+    "final_call_tps": 1331.5867694972599,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 1043.509784860833,
+      "p90TokensPerSecond": 1331.5867694972599,
+      "outputTokens": 680,
+      "generationMs": 810.79557,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-035.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "4974f4659376a4209b2039e3a6cb1f85e8a1ed033eedb50e247a602de61b11b0",
+      "official-speed.json": "9bb7ca2b122a23800b5ab70f0d960a885e2f1f7cdc05fc1fd538535b77e44ad5",
+      "response-status.jsonl": "87693362e6614abeef27a38f24a6eecadcafadc2f095f6d48aedeff8bb94d032",
+      "provider-stream-receipts.jsonl": "a8bb82cfa2104a76d5fb659a246496cbb90b740c25a8f27b4e7a06cd141cc09e"
+    },
+    "process_exit_code": 0
+  },
+  {
+    "id": "run-036",
+    "label": "santa-astra-208-five-arguments/ui-companion-cli-20261123-000230",
+    "started_utc": "2026-11-22T18:32:35.977000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 940.0696644299819,
+    "final_call_tps": 1146.638806594673,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 940.0696644299819,
+      "p90TokensPerSecond": 1146.638806594673,
+      "outputTokens": 685,
+      "generationMs": 848.407227,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-036.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "09cee194eeeebe66fb49bdadc0e6f433eb77d0192c68cf5404681b170668a124",
+      "official-speed.json": "c62b2373dd5176a9a3c5bbd47612165d969569e8547eec916f091e74d0366e6a",
+      "response-status.jsonl": "75c1eb306767bbbd5087e0329e4d186ef217ae79fd5f1933928c1f0557d8c5f1",
+      "provider-stream-receipts.jsonl": "541f80186e4fa331888295f3195aa2c290329e9d8aad2d42843185f152470d74"
+    },
+    "process_exit_code": 0
+  },
+  {
+    "id": "run-037",
+    "label": "santa-astra-208-five-arguments/ui-companion-cli-20261123-000254",
+    "started_utc": "2026-11-22T18:32:59.619000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 704.9290539380257,
+    "final_call_tps": 720.8987040440041,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 704.9290539380258,
+      "p90TokensPerSecond": 720.8987040440043,
+      "outputTokens": 697,
+      "generationMs": 1000.095398,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-037.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "9bcb14ea7f72938e812d3c68a335a4282fe2556bbbe550957b5d7cb4fa4dda17",
+      "official-speed.json": "8d9f16c5ac345c30c84b942334f215dc126291566ff10f3e0555f7262f1a1ced",
+      "response-status.jsonl": "2296fea9e963c72ac7e6bbcc5f49120a09e08df1832f73ed576ff60a0eb72773",
+      "provider-stream-receipts.jsonl": "1dc587788661dcebfa34f9879840a287b58456f50b6834221e8dc3b85a41a372"
+    },
+    "process_exit_code": 0
+  },
+  {
+    "id": "run-038",
+    "label": "santa-500-ui-batch-cSzufF/run-01",
+    "started_utc": "2026-11-22T18:35:43.133000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 1024.5020960311272,
+    "final_call_tps": 891.9936476648784,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 1024.5020960311272,
+      "p90TokensPerSecond": 1157.0105443973757,
+      "outputTokens": 697,
+      "generationMs": 650.947467,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-038.json",
+    "recordings": [
+      "clip-026"
+    ],
+    "source_hashes": {
+      "official-speed.json": "679ed2cc2408c079b2ed2d1aa7aa437a626943d608d125ae37636ce8b285c6d0"
+    }
+  },
+  {
+    "id": "run-039",
+    "label": "santa-500-ui-batch-cSzufF/run-02",
+    "started_utc": "2026-11-22T18:38:02.277000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 893.4656676390771,
+    "final_call_tps": 783.5541567372627,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 893.4656676390771,
+      "p90TokensPerSecond": 1003.3771785408916,
+      "outputTokens": 655,
+      "generationMs": 700.8869,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-039.json",
+    "recordings": [
+      "clip-027"
+    ],
+    "source_hashes": {
+      "official-speed.json": "0dc5b74efc8349c0768748950e60bd847dcf7d0cfd4f407dff212796d09d2367"
+    }
+  },
+  {
+    "id": "run-040",
+    "label": "santa-500-ui-batch-cSzufF/run-03",
+    "started_utc": "2026-11-22T18:38:42.249000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 779.6212244437761,
+    "final_call_tps": 602.1949823385738,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 779.621224443776,
+      "p90TokensPerSecond": 957.0474665489783,
+      "outputTokens": 669,
+      "generationMs": 808.005819,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-040.json",
+    "recordings": [
+      "clip-028"
+    ],
+    "source_hashes": {
+      "official-speed.json": "d7fca2849d829a0f6b130cb8ad4ad97a350c16b11ab3eff7823ba841e799e8c6"
+    }
+  },
+  {
+    "id": "run-041",
+    "label": "santa-500-ui-batch-cSzufF/run-04",
+    "started_utc": "2026-11-22T18:39:26.258000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 880.0694199368138,
+    "final_call_tps": 836.8351354930859,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 880.0694199368138,
+      "p90TokensPerSecond": 923.3037043805417,
+      "outputTokens": 683,
+      "generationMs": 758.3121980000001,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-041.json",
+    "recordings": [
+      "clip-029"
+    ],
+    "source_hashes": {
+      "official-speed.json": "3b24b950452317120ee2d503d425e9c45aa6b873219d1c43a21094bef0d1d570"
+    }
+  },
+  {
+    "id": "run-042",
+    "label": "santa-500-ui-batch-cSzufF/run-05",
+    "started_utc": "2026-11-22T18:40:07.813000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 691.952652190808,
+    "final_call_tps": 750.5802820650048,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 691.9526521908081,
+      "p90TokensPerSecond": 750.5802820650048,
+      "outputTokens": 721,
+      "generationMs": 1091.3228680000002,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-042.json",
+    "recordings": [
+      "clip-030"
+    ],
+    "source_hashes": {
+      "official-speed.json": "d2150443b50098bee0630054ab59c03b602aa1e1412308b6098a5e42f6c51359"
+    }
+  },
+  {
+    "id": "run-043",
+    "label": "santa-500-ui-batch-cSzufF/run-06",
+    "started_utc": "2026-11-22T18:41:12.576000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 946.8112451992835,
+    "final_call_tps": 999.9562671060198,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 946.8112451992835,
+      "p90TokensPerSecond": 999.9562671060198,
+      "outputTokens": 660,
+      "generationMs": 717.002214,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-043.json",
+    "recordings": [
+      "clip-031"
+    ],
+    "source_hashes": {
+      "official-speed.json": "207a0fb61727cd0211e79e21550acb7dca35ea517a9ec5ff89af7f7f25f670ce"
+    }
+  },
+  {
+    "id": "run-044",
+    "label": "santa-500-ui-batch-cSzufF/run-07",
+    "started_utc": "2026-11-22T18:41:54.636000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 1052.8362297072883,
+    "final_call_tps": 928.9024624290773,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 1052.8362297072883,
+      "p90TokensPerSecond": 1176.7699969854993,
+      "outputTokens": 659,
+      "generationMs": 601.050236,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-044.json",
+    "recordings": [
+      "clip-032"
+    ],
+    "source_hashes": {
+      "official-speed.json": "80f8495012eae230a5f1dd701ef718f49ff0ec1201654701f49c5cbcae238923"
+    }
+  },
+  {
+    "id": "run-045",
+    "label": "santa-500-ui-batch-cSzufF/run-08",
+    "started_utc": "2026-11-22T18:42:32.840000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 726.6523799949151,
+    "final_call_tps": 740.0639697767424,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 726.6523799949151,
+      "p90TokensPerSecond": 740.0639697767424,
+      "outputTokens": 670,
+      "generationMs": 929.922334,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-045.json",
+    "recordings": [
+      "clip-033"
+    ],
+    "source_hashes": {
+      "official-speed.json": "0644bca513ff7e6f95132fd9be37ad842b2f0195b3ef8c2669b055b7eb275be9"
+    }
+  },
+  {
+    "id": "run-046",
+    "label": "santa-500-ui-batch-cSzufF/run-09",
+    "started_utc": "2026-11-22T18:43:10.029000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 836.4583957457124,
+    "final_call_tps": 909.3057259985482,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 836.4583957457123,
+      "p90TokensPerSecond": 909.3057259985482,
+      "outputTokens": 669,
+      "generationMs": 839.8003709999999,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-046.json",
+    "recordings": [
+      "clip-034"
+    ],
+    "source_hashes": {
+      "official-speed.json": "7f019cafdbbc6062b2cc03487c91cb2c28554d09bfe2f7e3abe5085df11a1e96"
+    }
+  },
+  {
+    "id": "run-047",
+    "label": "santa-500-ui-batch-cSzufF/run-10",
+    "started_utc": "2026-11-22T18:43:48.511000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 887.8757978197773,
+    "final_call_tps": 980.1462411558485,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 887.8757978197773,
+      "p90TokensPerSecond": 980.1462411558485,
+      "outputTokens": 668,
+      "generationMs": 795.122302,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-047.json",
+    "recordings": [
+      "clip-035"
+    ],
+    "source_hashes": {
+      "official-speed.json": "59757afdf1bef58ed36fddae5f63fb75cd9d597de6bac5f1bb3c5c0c51a085c6"
+    }
+  },
+  {
+    "id": "run-048",
+    "label": "santa-500-ui-batch-cSzufF/run-11",
+    "started_utc": "2026-11-22T18:44:26.391000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 903.1330077230409,
+    "final_call_tps": 890.3496826721541,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 903.1330077230409,
+      "p90TokensPerSecond": 915.9163327739277,
+      "outputTokens": 657,
+      "generationMs": 723.1144429999999,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-048.json",
+    "recordings": [
+      "clip-036"
+    ],
+    "source_hashes": {
+      "official-speed.json": "c75b02b9bf2d771191028bf132632bc066aa8dc955b34e6ec6e50f08a0a984b2"
+    }
+  },
+  {
+    "id": "run-049",
+    "label": "santa-500-ui-batch-cSzufF/run-12",
+    "started_utc": "2026-11-22T18:45:04.977000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 1123.4476580048085,
+    "final_call_tps": 1230.9155930190284,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 1123.4476580048085,
+      "p90TokensPerSecond": 1230.9155930190284,
+      "outputTokens": 644,
+      "generationMs": 604.309584,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-049.json",
+    "recordings": [
+      "clip-037"
+    ],
+    "source_hashes": {
+      "official-speed.json": "243c0db85862a54305f87f919038aa0a85b832a335e828caec32d5bac3e1393b"
+    }
+  },
+  {
+    "id": "run-050",
+    "label": "santa-500-ui-batch-cSzufF/run-13",
+    "started_utc": "2026-11-22T18:45:43.625000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 816.4374217322843,
+    "final_call_tps": 784.1434400183497,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 816.4374217322843,
+      "p90TokensPerSecond": 848.731403446219,
+      "outputTokens": 669,
+      "generationMs": 806.092038,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-050.json",
+    "recordings": [
+      "clip-038"
+    ],
+    "source_hashes": {
+      "official-speed.json": "8b86e69c67367609173e18084d9234fb26012c88a6e151e98dd9b5b16e821486"
+    }
+  },
+  {
+    "id": "run-051",
+    "label": "santa-500-ui-batch-cSzufF/run-14",
+    "started_utc": "2026-11-22T18:46:21.974000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 810.5387415944369,
+    "final_call_tps": 980.3439378854081,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 810.5387415944369,
+      "p90TokensPerSecond": 980.3439378854081,
+      "outputTokens": 718,
+      "generationMs": 1024.893622,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-051.json",
+    "recordings": [
+      "clip-039"
+    ],
+    "source_hashes": {
+      "official-speed.json": "4a2f7507a179f822335b581d614fb52e8e4ab6999f722a9ba7058d6f53cc8776"
+    }
+  },
+  {
+    "id": "run-052",
+    "label": "santa-500-ui-batch-cSzufF/run-15",
+    "started_utc": "2026-11-22T18:47:01.228000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 722.5727661577885,
+    "final_call_tps": 842.1897039892352,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 722.5727661577885,
+      "p90TokensPerSecond": 842.1897039892352,
+      "outputTokens": 739,
+      "generationMs": 1135.6457220000002,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-052.json",
+    "recordings": [
+      "clip-040"
+    ],
+    "source_hashes": {
+      "official-speed.json": "8ab106dde80e33fe42c78075cf91bee75e0411279ecfaa024d55afca5aa9b75f"
+    }
+  },
+  {
+    "id": "run-053",
+    "label": "santa-500-ui-batch-cSzufF/run-16",
+    "started_utc": "2026-11-22T18:47:40.419000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 667.3435349813092,
+    "final_call_tps": 689.4266271656264,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 667.3435349813092,
+      "p90TokensPerSecond": 689.4266271656264,
+      "outputTokens": 659,
+      "generationMs": 1002.9260290000001,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-053.json",
+    "recordings": [
+      "clip-041"
+    ],
+    "source_hashes": {
+      "official-speed.json": "f9ef8c4b3e792b03c16e0dd419fe5c7451415f2f8235f056748cd02f4010d83d"
+    }
+  },
+  {
+    "id": "run-054",
+    "label": "santa-500-ui-batch-cSzufF/run-17",
+    "started_utc": "2026-11-22T18:48:19.371000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 759.4596862429058,
+    "final_call_tps": 779.4115085347903,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 759.4596862429058,
+      "p90TokensPerSecond": 779.4115085347903,
+      "outputTokens": 668,
+      "generationMs": 890.634102,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-054.json",
+    "recordings": [
+      "clip-042"
+    ],
+    "source_hashes": {
+      "official-speed.json": "1f37f75907eaae5ee7afeb633e93bdf17abd568a90b438c032ed6b317bdba956"
+    }
+  },
+  {
+    "id": "run-055",
+    "label": "santa-500-ui-batch-cSzufF/run-18",
+    "started_utc": "2026-11-22T18:48:56.068000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 821.3750650231186,
+    "final_call_tps": 744.3253905933065,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 821.3750650231186,
+      "p90TokensPerSecond": 898.4247394529307,
+      "outputTokens": 706,
+      "generationMs": 828.9119780000001,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-055.json",
+    "recordings": [
+      "clip-043"
+    ],
+    "source_hashes": {
+      "official-speed.json": "04aa1d61e361722baa023cee9255b7a671e027d564748b3b93fddb53616e8d20"
+    }
+  },
+  {
+    "id": "run-056",
+    "label": "santa-astra-208-five-arguments/proof-cli-20261123-002107",
+    "started_utc": "2026-11-22T18:51:14.433000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 923.7287088676585,
+    "final_call_tps": 985.9554373937644,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 923.7287088676585,
+      "p90TokensPerSecond": 985.9554373937643,
+      "outputTokens": 643,
+      "generationMs": 721.169654,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-056.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "069f415005298d6063f003e43b2aef0a3a01832c090121dac66b6bdc2cc59f1f",
+      "official-speed.json": "904ca60c14435c7dd5b7428954197aefee4af609ed6a6f78ef744027be918d06",
+      "response-status.jsonl": "5becdb21269ca944211f30482dcb9ef5905e973d338e4d3d79f96a62d4a7e497",
+      "provider-stream-receipts.jsonl": "ddd1a138b0f596066ebb6184578e42797f75196979676936426752d18fa8bd88"
+    },
+    "process_exit_code": 0
+  },
+  {
+    "id": "run-057",
+    "label": "santa-500-crosscheck-8v0b0C/run-01",
+    "started_utc": "2026-11-22T18:52:07.289000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 774.5966203173874,
+    "final_call_tps": 755.3917344029232,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 774.5966203173874,
+      "p90TokensPerSecond": 793.8015062318516,
+      "outputTokens": 729,
+      "generationMs": 929.895625,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-057.json",
+    "recordings": [
+      "clip-010"
+    ],
+    "source_hashes": {
+      "official-speed.json": "f5b3540f696ab50a5750789884c0ebca3f1520c0473128d8148f77ef76bcd82d"
+    }
+  },
+  {
+    "id": "run-058",
+    "label": "santa-500-crosscheck-8v0b0C/run-02",
+    "started_utc": "2026-11-22T18:52:46.545000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 712.7706888537197,
+    "final_call_tps": 577.7593963994148,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 712.7706888537197,
+      "p90TokensPerSecond": 847.7819813080246,
+      "outputTokens": 659,
+      "generationMs": 878.205952,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-058.json",
+    "recordings": [
+      "clip-011"
+    ],
+    "source_hashes": {
+      "official-speed.json": "c4f6d1b361e33d5a6f3b98e7f731c8d09fb14c6f363c570d8cad2c377d1d7754"
+    }
+  },
+  {
+    "id": "run-059",
+    "label": "santa-500-crosscheck-8v0b0C/run-03",
+    "started_utc": "2026-11-22T18:53:24.057000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 747.6262902934443,
+    "final_call_tps": 711.6686234510901,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 747.6262902934443,
+      "p90TokensPerSecond": 783.5839571357986,
+      "outputTokens": 718,
+      "generationMs": 940.9341149999999,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-059.json",
+    "recordings": [
+      "clip-012"
+    ],
+    "source_hashes": {
+      "official-speed.json": "8833c9ff0d367af324039e98824666176fbfebb97720a29eb9fd4c2405eccfff"
+    }
+  },
+  {
+    "id": "run-060",
+    "label": "santa-500-crosscheck-8v0b0C/run-04",
+    "started_utc": "2026-11-22T18:54:07.108000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 854.0545048257688,
+    "final_call_tps": 1087.576179823414,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 854.0545048257688,
+      "p90TokensPerSecond": 1087.576179823414,
+      "outputTokens": 713,
+      "generationMs": 1025.8289770000001,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-060.json",
+    "recordings": [
+      "clip-013"
+    ],
+    "source_hashes": {
+      "official-speed.json": "528928d79f509d62eaaeefb28791a8aff099f430acb3fed9d867e0db9dcd517e"
+    }
+  },
+  {
+    "id": "run-061",
+    "label": "santa-astra-208-five-arguments/proof-cli-20261123-002457",
+    "started_utc": "2026-11-22T18:55:03.337000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 957.9229694975352,
+    "final_call_tps": 1039.6010351028299,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 957.9229694975352,
+      "p90TokensPerSecond": 1039.6010351028299,
+      "outputTokens": 664,
+      "generationMs": 726.396967,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-061.json",
+    "recordings": [],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "7c40fafd25f2374471b172dcf969d71bf719ac755d6255cf9b93040052be9ab4",
+      "official-speed.json": "c3a9dd5eb245036abab89972e94b97faa42071047171bd8cab8a990ba8f27014",
+      "response-status.jsonl": "2f7659b73f34c8eada74eae27608d667037fe2747db98d23ae316f2168f2b152",
+      "provider-stream-receipts.jsonl": "ec1b7c1027e9fd84f0748ccfd9a33a26462556dcc63d42c3b77e842927702e8d"
+    },
+    "process_exit_code": 0
+  },
+  {
+    "id": "run-062",
+    "label": "santa-astra-208-five-arguments/proof-cli-20261123-002523",
+    "started_utc": "2026-11-22T18:55:28.796000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 1375.3968211379533,
+    "final_call_tps": 1794.6583443910936,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 1375.3968211379533,
+      "p90TokensPerSecond": 1794.6583443910938,
+      "outputTokens": 628,
+      "generationMs": 580.578608,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-062.json",
+    "recordings": [
+      "clip-014"
+    ],
+    "milestone": "new-cli-peak",
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "7c972029b4634453bd4397967480cb1e31e2abee7553fbeca51465ec9b306bfa",
+      "official-speed.json": "98f78cd158f36379b7558bf8c32c37036ee7b6121a638ad20d177a1839f76a02",
+      "response-status.jsonl": "8ebd9250e7441fb047e1e7f70a988f150abd30a1cd87497cedf6b07dadc29cdf",
+      "provider-stream-receipts.jsonl": "21527b9cfff50f69d8fadeb97019023c60204c05ae8bd7eefed2d3bf4d93ec4d"
+    },
+    "process_exit_code": 0,
+    "milestone_receipts": "milestones/new-cli-peak",
+    "openclaw_commit": "94043a69f5fc1e1fc1def41b32bce744a2e5add0",
+    "protected_files_checked": 25
+  },
+  {
+    "id": "run-063",
+    "label": "santa-astra-208-five-arguments/confirmation-cli-20261123-002554",
+    "started_utc": "2026-11-22T18:55:59.684000+00:00",
+    "entry_point": "CLI agent exec",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 818.2655378411835,
+    "final_call_tps": 815.7473243997603,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 818.2655378411835,
+      "p90TokensPerSecond": 820.7837512826065,
+      "outputTokens": 638,
+      "generationMs": 778.479281,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-063.json",
+    "recordings": [],
+    "milestone": "immediate-confirmation",
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "fa142711e417d23920331f44b7524c4f00147671e717cb0b16f74b6d0b9dd26b",
+      "official-speed.json": "b20d1246fa8197ed4f689f91f02a7d1fd8e719d2ff3befd8fec6ca23dc3c50df",
+      "response-status.jsonl": "901003f846f7454d0d92d2277c577df92d13ccbf600fd72da0171157e48335e8",
+      "provider-stream-receipts.jsonl": "09924e58ec207620fcee9f55a6ba74e93b6251c04aa992dc423058dde2adface"
+    },
+    "process_exit_code": 0,
+    "milestone_receipts": "milestones/immediate-confirmation",
+    "openclaw_commit": "94043a69f5fc1e1fc1def41b32bce744a2e5add0",
+    "protected_files_checked": 25
+  },
+  {
+    "id": "run-064",
+    "label": "santa-500-newpeak-ui-n3fhx_dv/run-01",
+    "started_utc": "2026-11-22T18:56:46.925000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 1094.6522418960867,
+    "final_call_tps": 867.8233145087104,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 1094.6522418960867,
+      "p90TokensPerSecond": 1321.481169283463,
+      "outputTokens": 660,
+      "generationMs": 570.248696,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-064.json",
+    "recordings": [
+      "clip-016"
+    ],
+    "source_hashes": {
+      "official-speed.json": "9cff3bcf7cab16827d367040c5c2c36172b7dbdcfc4f6ccb7651aa2faca36e7d"
+    }
+  },
+  {
+    "id": "run-065",
+    "label": "santa-500-newpeak-ui-n3fhx_dv/run-02",
+    "started_utc": "2026-11-22T18:57:26.581000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 815.2962634689845,
+    "final_call_tps": 758.9862527666235,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 815.2962634689845,
+      "p90TokensPerSecond": 871.6062741713457,
+      "outputTokens": 646,
+      "generationMs": 771.1225590000001,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-065.json",
+    "recordings": [
+      "clip-017"
+    ],
+    "source_hashes": {
+      "official-speed.json": "1aea1c215d0c8d057e5fd4132494ca052dd1d3ad959911d582203e79726586b1"
+    }
+  },
+  {
+    "id": "run-066",
+    "label": "santa-500-newpeak-ui-n3fhx_dv/run-03",
+    "started_utc": "2026-11-22T18:58:04.782000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 787.1138932880679,
+    "final_call_tps": 889.8626531901016,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 787.1138932880679,
+      "p90TokensPerSecond": 889.8626531901016,
+      "outputTokens": 676,
+      "generationMs": 926.7002749999999,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-066.json",
+    "recordings": [
+      "clip-018"
+    ],
+    "source_hashes": {
+      "official-speed.json": "53d79bd1739d7f633bd781a1cfb12c854ad64ba37dc56b6e402ba232e96f08b9"
+    }
+  },
+  {
+    "id": "run-067",
+    "label": "santa-500-newpeak-ui-n3fhx_dv/run-04",
+    "started_utc": "2026-11-22T18:58:44.699000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 891.9491531511501,
+    "final_call_tps": 1088.4452445226846,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 891.9491531511502,
+      "p90TokensPerSecond": 1088.4452445226848,
+      "outputTokens": 689,
+      "generationMs": 895.1938069999999,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-067.json",
+    "recordings": [
+      "clip-019"
+    ],
+    "source_hashes": {
+      "official-speed.json": "91bae361e8fcac0f9aaf45282cfd389790cacb840866b8f3366deca001a385ae"
+    }
+  },
+  {
+    "id": "run-068",
+    "label": "santa-500-newpeak-ui-n3fhx_dv/run-05",
+    "started_utc": "2026-11-22T18:59:23.226000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 614.4325104678715,
+    "final_call_tps": 522.7468621379043,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 614.4325104678715,
+      "p90TokensPerSecond": 706.1181587978386,
+      "outputTokens": 677,
+      "generationMs": 1048.183129,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-068.json",
+    "recordings": [
+      "clip-020"
+    ],
+    "source_hashes": {
+      "official-speed.json": "ce55adb62ee9f3a8977c2ef29bab61b74554ba6949bc641947fc3c7c381af31d"
+    }
+  },
+  {
+    "id": "run-069",
+    "label": "santa-500-newpeak-ui-n3fhx_dv/run-06",
+    "started_utc": "2026-11-22T19:00:01.531000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 643.8357745302362,
+    "final_call_tps": 636.939727115488,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 643.8357745302362,
+      "p90TokensPerSecond": 650.7318219449843,
+      "outputTokens": 777,
+      "generationMs": 1200.029932,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-069.json",
+    "recordings": [
+      "clip-021"
+    ],
+    "source_hashes": {
+      "official-speed.json": "23ac9cac54e97ce63ff025fc221cf9d8c16dae18d4efaf3ed13edded35210b70"
+    }
+  },
+  {
+    "id": "run-070",
+    "label": "santa-500-newpeak-ui-n3fhx_dv/run-07",
+    "started_utc": "2026-11-22T19:00:43.943000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 1116.6724843706443,
+    "final_call_tps": 1141.4873216310475,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 1116.6724843706443,
+      "p90TokensPerSecond": 1141.4873216310475,
+      "outputTokens": 714,
+      "generationMs": 646.80357,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-070.json",
+    "recordings": [
+      "clip-022"
+    ],
+    "source_hashes": {
+      "official-speed.json": "175b448dba1c3ae8e2058686bfd86d4d5118a69e101da1b7ee4f97591a4c1c5f"
+    }
+  },
+  {
+    "id": "run-071",
+    "label": "santa-500-newpeak-ui-n3fhx_dv/run-08",
+    "started_utc": "2026-11-22T19:01:41.466000+00:00",
+    "entry_point": "gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 687.2830497771286,
+    "final_call_tps": 611.9101803389532,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 687.2830497771286,
+      "p90TokensPerSecond": 762.6559192153039,
+      "outputTokens": 714,
+      "generationMs": 993.3764530000001,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-071.json",
+    "recordings": [
+      "clip-023"
+    ],
+    "source_hashes": {
+      "official-speed.json": "6f66f778eb681544727ed5de929aedbcf82a4695cf0164c8ee79712855680d95"
+    }
+  },
+  {
+    "id": "run-072",
+    "label": "santa-500-newpeak-ui-n3fhx_dv/joint-recipe/joint-live-01",
+    "started_utc": "2026-11-22T19:02:28.137717+00:00",
+    "entry_point": "gateway",
+    "status": "launch-failed",
+    "timed_calls": 0,
+    "observed_mean_tps": null,
+    "final_call_tps": null,
+    "verified_products": 0,
+    "official_score": null,
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "saved prompt file",
+    "evidence": "evidence/run-072.json",
+    "recordings": [
+      "clip-015"
+    ],
+    "source_hashes": {
+      "prompt.txt": "daeacab054ba8e01c7b290f430d0bfc4621f102bee25a826393213e4d2cf8e99",
+      "config.json": "de55336d1c981a598b9fc655ca09c51384076639ca4fbc2c43985df9ba0a0a82",
+      "command.json": "4d4d5bab817c0424a607427904dc7d1bcb5bca0db95a0496b7cee072315eb514"
+    },
+    "process_exit_code": 1
+  },
+  {
+    "id": "run-073",
+    "label": "santa-500-newpeak-ui-n3fhx_dv/run-09",
+    "started_utc": "2026-11-22T19:03:00.387000+00:00",
+    "entry_point": "CLI via gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 930.1962809481922,
+    "final_call_tps": 1005.7958413885103,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 930.1962809481922,
+      "p90TokensPerSecond": 1005.7958413885103,
+      "outputTokens": 656,
+      "generationMs": 736.6542420000001,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-073.json",
+    "recordings": [
+      "clip-024"
+    ],
+    "source_hashes": {
+      "official-speed.json": "6fe9ebdc941bddf2dfd62ef90e64a943e56614ead821f1fb8d469c5bc8fe6a11"
+    }
+  },
+  {
+    "id": "run-074",
+    "label": "santa-500-newpeak-ui-n3fhx_dv/run-10",
+    "started_utc": "2026-11-22T19:03:47.943000+00:00",
+    "entry_point": "CLI via gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 791.6323249652705,
+    "final_call_tps": 728.6177877821005,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 791.6323249652705,
+      "p90TokensPerSecond": 854.6468621484406,
+      "outputTokens": 661,
+      "generationMs": 811.872535,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-074.json",
+    "recordings": [
+      "clip-025"
+    ],
+    "source_hashes": {
+      "official-speed.json": "606b80b879465012bc7352ca4ba3908cc22c86895a160aad720529cd579f7836"
+    }
+  },
+  {
+    "id": "run-075",
+    "label": "santa-500-live-target-V46yx1/run-01",
+    "started_utc": "2026-11-22T19:06:04.948761+00:00",
+    "entry_point": "CLI via gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 925.9603870538585,
+    "final_call_tps": 1129.6716727930107,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 925.9603870538585,
+      "p90TokensPerSecond": 1129.6716727930107,
+      "outputTokens": 717,
+      "generationMs": 903.348473,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-075.json",
+    "recordings": [
+      "clip-044"
+    ],
+    "source_hashes": {
+      "official-speed.json": "00ff57ec5efe1a92a13e9aa672ffb84f9e154a6f8bae8c13257de74feaa5331b"
+    }
+  },
+  {
+    "id": "run-076",
+    "label": "santa-500-live-target-V46yx1/run-02",
+    "started_utc": "2026-11-22T19:06:47.285402+00:00",
+    "entry_point": "CLI via gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 963.3514884136488,
+    "final_call_tps": 760.3727877103254,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 963.3514884136488,
+      "p90TokensPerSecond": 1166.3301891169722,
+      "outputTokens": 669,
+      "generationMs": 655.074257,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-076.json",
+    "recordings": [
+      "clip-045"
+    ],
+    "source_hashes": {
+      "official-speed.json": "3fd2f4cbfdf5ee3d5195b8815260d3bfd7d6d4b9c75d72a7e41bb522fd5fad9e"
+    }
+  },
+  {
+    "id": "run-077",
+    "label": "santa-500-live-target-V46yx1/run-03",
+    "started_utc": "2026-11-22T19:08:16.659533+00:00",
+    "entry_point": "CLI via gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 937.727939406124,
+    "final_call_tps": 915.8689483017205,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 937.727939406124,
+      "p90TokensPerSecond": 959.5869305105276,
+      "outputTokens": 670,
+      "generationMs": 706.922331,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-077.json",
+    "recordings": [
+      "clip-046"
+    ],
+    "source_hashes": {
+      "official-speed.json": "6192447308ba4a167932667ba724c384d6c6743f2528f19b8dc157c1e4bfd0df"
+    }
+  },
+  {
+    "id": "run-078",
+    "label": "santa-500-live-target-V46yx1/run-04",
+    "started_utc": "2026-11-22T19:09:17.666466+00:00",
+    "entry_point": "CLI via gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 947.1489734878967,
+    "final_call_tps": 995.5552415160217,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 947.1489734878967,
+      "p90TokensPerSecond": 995.5552415160219,
+      "outputTokens": 672,
+      "generationMs": 730.8318750000001,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-078.json",
+    "recordings": [
+      "clip-047"
+    ],
+    "source_hashes": {
+      "official-speed.json": "0614704365be1e10821ada9c3ecbcaa4bbcd31ff41f9c7f8bd660b4440708af0"
+    }
+  },
+  {
+    "id": "run-079",
+    "label": "santa-500-live-target-V46yx1/run-05",
+    "started_utc": "2026-11-22T19:09:57.384260+00:00",
+    "entry_point": "CLI via gateway",
+    "status": "incomplete-or-rate-limited",
+    "timed_calls": 1,
+    "observed_mean_tps": 719.1055060559373,
+    "final_call_tps": null,
+    "verified_products": 0,
+    "official_score": null,
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-079.json",
+    "recordings": [
+      "clip-048"
+    ],
+    "source_hashes": {}
+  },
+  {
+    "id": "run-080",
+    "label": "santa-500-live-target-V46yx1/run-06",
+    "started_utc": "2026-11-22T19:12:07.470025+00:00",
+    "entry_point": "CLI via gateway",
+    "status": "qualified",
+    "timed_calls": 2,
+    "observed_mean_tps": 685.9935451211713,
+    "final_call_tps": 572.6955965477408,
+    "verified_products": 5,
+    "official_score": {
+      "meanTokensPerSecond": 685.9935451211713,
+      "p90TokensPerSecond": 799.2914936946019,
+      "outputTokens": 669,
+      "generationMs": 925.10488,
+      "calls": 2
+    },
+    "settings": {
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "params": {
+        "temperature": 0.3
+      }
+    },
+    "prompt_evidence": "user message in session",
+    "evidence": "evidence/run-080.json",
+    "recordings": [
+      "clip-049"
+    ],
+    "source_hashes": {
+      "official-speed.json": "0f4661baabbed4eb33f694c9d176755790eddb4694a3f2f7e47111c52950ab74"
+    }
+  }
+]

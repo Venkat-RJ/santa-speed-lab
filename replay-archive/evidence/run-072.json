@@ -1,0 +1,10 @@
+{
+  "session_id": null,
+  "transcript_sha256": null,
+  "messages": [],
+  "retail_pages": [],
+  "provider_timing_frames": [],
+  "observed_http_statuses": [],
+  "http_status_scope": "gateway time window",
+  "observed_requests": []
+}

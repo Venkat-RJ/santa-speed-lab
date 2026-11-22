@@ -1,0 +1,340 @@
+{
+  "session_id": "2ad7393c-9648-4bd4-bacb-d1233f121490",
+  "transcript_sha256": "09bedb421675127414f63001d11a89e6e3e9d961a912da64283da973f6b04772",
+  "messages": [
+    {
+      "role": "user",
+      "original_prompt": true
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    },
+    {
+      "role": "assistant",
+      "stopReason": "toolUse",
+      "serverGeneration": {
+        "outputTokens": 519,
+        "completionMs": 572.9200989999999
+      },
+      "usageOutput": 519,
+      "toolCalls": [
+        {
+          "id": "97249db1f",
+          "name": "web_fetch",
+          "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock"
+        },
+        {
+          "id": "7055c6d36",
+          "name": "web_fetch",
+          "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock"
+        },
+        {
+          "id": "23198d684",
+          "name": "web_fetch",
+          "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock"
+        },
+        {
+          "id": "811963077",
+          "name": "web_fetch",
+          "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock"
+        },
+        {
+          "id": "eb07ee7dd",
+          "name": "web_fetch",
+          "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock"
+        }
+      ]
+    },
+    {
+      "role": "toolResult",
+      "toolCallId": "97249db1f",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock",
+      "category": "filter",
+      "http_status": 200,
+      "cached": false,
+      "catalog": [
+        {
+          "name": "AI024 Eurorack X Filter",
+          "permalink": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+          "is_in_stock": true
+        }
+      ]
+    },
+    {
+      "role": "toolResult",
+      "toolCallId": "7055c6d36",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock",
+      "category": "mixer",
+      "http_status": 200,
+      "cached": false,
+      "catalog": [
+        {
+          "name": "AI028 Voltage Controlled Matrix Mixer",
+          "permalink": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+          "is_in_stock": true
+        }
+      ]
+    },
+    {
+      "role": "toolResult",
+      "toolCallId": "23198d684",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock",
+      "category": "oscillator",
+      "http_status": 200,
+      "cached": false,
+      "catalog": [
+        {
+          "name": "AI011 Analog Voltage Controlled Oscillator",
+          "permalink": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+          "is_in_stock": true
+        }
+      ]
+    },
+    {
+      "role": "toolResult",
+      "toolCallId": "811963077",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock",
+      "category": "echo",
+      "http_status": 200,
+      "cached": false,
+      "catalog": [
+        {
+          "name": "AI016 Eurorack Tape Echo Interface",
+          "permalink": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+          "is_in_stock": true
+        }
+      ]
+    },
+    {
+      "role": "toolResult",
+      "toolCallId": "eb07ee7dd",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock",
+      "category": "cable",
+      "http_status": 200,
+      "cached": false,
+      "catalog": [
+        {
+          "name": "Eurorack Modular Patch Cable 4.9ft",
+          "permalink": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+          "is_in_stock": true
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    }
+  ],
+  "retail_pages": [],
+  "provider_timing_frames": [
+    {
+      "event": "timing-frame",
+      "system_fingerprint": "fp_5a78cfaf6b44de160dbc",
+      "time_info": {
+        "queue_time": 33.79288704099999,
+        "prompt_time": 0.417233211,
+        "completion_time": 0.572920099,
+        "total_time": 34.79547715187073
+      },
+      "headersAt": "2026-11-22T14:02:28.865Z",
+      "observedAt": "2026-11-22T14:03:03.579Z"
+    }
+  ],
+  "observed_http_statuses": [
+    429,
+    429,
+    429,
+    429,
+    429,
+    200,
+    429,
+    429,
+    429
+  ],
+  "http_status_scope": "individual run log",
+  "observed_requests": [
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "user"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "user"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "user"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "user"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "user"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "user",
+        "assistant",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "tool"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "assistant",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "user"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "assistant",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "user",
+        "user"
+      ]
+    }
+  ]
+}

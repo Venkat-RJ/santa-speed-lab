@@ -1,0 +1,36 @@
+{
+  "session_id": "e917ff9e-0298-4089-be28-f9981d40e9a0",
+  "transcript_sha256": "838ffa242bb51f916e6a72cd4cbb12efae01b57b41781aa3bbe9f8b778c68ca7",
+  "messages": [
+    {
+      "role": "user",
+      "original_prompt": false
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    },
+    {
+      "role": "assistant",
+      "stopReason": "toolUse",
+      "serverGeneration": {
+        "outputTokens": 118,
+        "completionMs": 340.37010699999996
+      },
+      "usageOutput": 118
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    }
+  ],
+  "retail_pages": [],
+  "provider_timing_frames": [],
+  "observed_http_statuses": [],
+  "http_status_scope": "gateway time window",
+  "observed_requests": []
+}

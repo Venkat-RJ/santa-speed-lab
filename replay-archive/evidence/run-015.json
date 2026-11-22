@@ -1,0 +1,193 @@
+{
+  "session_id": null,
+  "transcript_sha256": null,
+  "messages": [],
+  "retail_pages": [],
+  "provider_timing_frames": [],
+  "observed_http_statuses": [
+    429,
+    429,
+    429,
+    429,
+    429,
+    429,
+    429,
+    200,
+    429,
+    429
+  ],
+  "http_status_scope": "individual run log",
+  "observed_requests": [
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "user"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "user"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "user"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "user"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "user"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "user"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "user"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "user",
+        "assistant",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "tool"
+      ]
+    },
+    {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "reasoning_effort": "low",
+      "temperature": 0.3,
+      "max_completion_tokens": 8192,
+      "stream": true,
+      "tools": [
+        "web_fetch"
+      ],
+      "promptCopies": 1,
+      "messageRoles": [
+        "system",
+        "user",
+        "assistant",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "tool",
+        "user"
+      ]
+    }
+  ]
+}

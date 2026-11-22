@@ -1,0 +1,177 @@
+{
+  "session_id": "3a853a1c-4fd4-45ce-8ba6-8182aaf82ff9",
+  "transcript_sha256": "ee5b7184ade3d8337da2fb273c184162547b16143dda9f28b80e31f172988598",
+  "messages": [
+    {
+      "role": "user",
+      "original_prompt": true
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    },
+    {
+      "role": "assistant",
+      "stopReason": "toolUse",
+      "serverGeneration": {
+        "outputTokens": 598,
+        "completionMs": 831.5886820000001
+      },
+      "usageOutput": 598,
+      "toolCalls": [
+        {
+          "id": "a476efe5e",
+          "name": "web_fetch",
+          "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock"
+        },
+        {
+          "id": "9b6ca11ba",
+          "name": "web_fetch",
+          "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock"
+        },
+        {
+          "id": "b580a1104",
+          "name": "web_fetch",
+          "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock"
+        },
+        {
+          "id": "f2b3204d6",
+          "name": "web_fetch",
+          "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock"
+        },
+        {
+          "id": "6a20d43b9",
+          "name": "web_fetch",
+          "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock"
+        }
+      ]
+    },
+    {
+      "role": "toolResult",
+      "toolCallId": "a476efe5e",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock",
+      "category": "filter",
+      "http_status": 200,
+      "cached": false,
+      "catalog": [
+        {
+          "name": "AI024 Eurorack X Filter",
+          "permalink": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+          "is_in_stock": true
+        }
+      ]
+    },
+    {
+      "role": "toolResult",
+      "toolCallId": "9b6ca11ba",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock",
+      "category": "mixer",
+      "http_status": 200,
+      "cached": false,
+      "catalog": [
+        {
+          "name": "AI028 Voltage Controlled Matrix Mixer",
+          "permalink": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+          "is_in_stock": true
+        }
+      ]
+    },
+    {
+      "role": "toolResult",
+      "toolCallId": "b580a1104",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock",
+      "category": "oscillator",
+      "http_status": 200,
+      "cached": false,
+      "catalog": [
+        {
+          "name": "AI011 Analog Voltage Controlled Oscillator",
+          "permalink": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+          "is_in_stock": true
+        }
+      ]
+    },
+    {
+      "role": "toolResult",
+      "toolCallId": "f2b3204d6",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock",
+      "category": "echo",
+      "http_status": 200,
+      "cached": false,
+      "catalog": [
+        {
+          "name": "AI016 Eurorack Tape Echo Interface",
+          "permalink": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+          "is_in_stock": true
+        }
+      ]
+    },
+    {
+      "role": "toolResult",
+      "toolCallId": "6a20d43b9",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name%2Cpermalink%2Cis_in_stock",
+      "category": "cable",
+      "http_status": 200,
+      "cached": false,
+      "catalog": [
+        {
+          "name": "Eurorack Modular Patch Cable 4.9ft",
+          "permalink": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+          "is_in_stock": true
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "original_prompt": false
+    }
+  ],
+  "retail_pages": [],
+  "provider_timing_frames": [
+    {
+      "event": "timing-frame",
+      "system_fingerprint": "fp_5a78cfaf6b44de160dbc",
+      "time_info": {
+        "queue_time": 4.315705707000001,
+        "prompt_time": 0.086181083,
+        "completion_time": 0.831588682,
+        "total_time": 5.2428367137908936
+      },
+      "headersAt": "2026-11-22T19:10:45.758Z",
+      "observedAt": "2026-11-22T19:10:50.986Z"
+    }
+  ],
+  "observed_http_statuses": [
+    429,
+    429,
+    429,
+    429,
+    429,
+    429,
+    200,
+    429,
+    429
+  ],
+  "http_status_scope": "gateway time window",
+  "observed_requests": []
+}
