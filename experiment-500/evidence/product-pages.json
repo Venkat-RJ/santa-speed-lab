@@ -1,0 +1,87 @@
+[
+  {
+    "category": "filter",
+    "name": "AI024 Eurorack X Filter",
+    "url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+    "http_status": 200,
+    "retrieved_at": "2026-11-22T13:44:54.272528+00:00",
+    "html_sha256": "0ec1db5c74c1a635f9fcfc7d30ec08e5d8e19b5a17a5ed735945f799c39df008",
+    "product_json_ld_excerpt": {
+      "@type": "Product",
+      "name": "AI024 Eurorack X Filter",
+      "offers": {
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "USD",
+        "lowPrice": "15.00"
+      }
+    }
+  },
+  {
+    "category": "mixer",
+    "name": "AI028 Voltage Controlled Matrix Mixer",
+    "url": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+    "http_status": 200,
+    "retrieved_at": "2026-11-22T13:44:54.272769+00:00",
+    "html_sha256": "2eb544957891e972e6e30365ff53ab14cdd4b41f75831c0236e8b9e3b64e126c",
+    "product_json_ld_excerpt": {
+      "@type": "Product",
+      "name": "AI028 Voltage Controlled Matrix Mixer",
+      "offers": {
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "USD",
+        "lowPrice": "20.00"
+      }
+    }
+  },
+  {
+    "category": "oscillator",
+    "name": "AI011 Analog Voltage Controlled Oscillator",
+    "url": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+    "http_status": 200,
+    "retrieved_at": "2026-11-22T13:44:58.131727+00:00",
+    "html_sha256": "55c8390d87b0e5e3e24102515341e6822afc9ee35bb60a8b00adb06d17245d0d",
+    "product_json_ld_excerpt": {
+      "@type": "Product",
+      "name": "AI011 Analog Voltage Controlled Oscillator",
+      "offers": {
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "USD",
+        "lowPrice": "15.00"
+      }
+    }
+  },
+  {
+    "category": "echo",
+    "name": "AI016 Eurorack Tape Echo Interface",
+    "url": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+    "http_status": 200,
+    "retrieved_at": "2026-11-22T13:44:58.384708+00:00",
+    "html_sha256": "72065abd56b8da1410a0f317ba8ecfe42a07aa2bccc3d7383f58818502bda877",
+    "product_json_ld_excerpt": {
+      "@type": "Product",
+      "name": "AI016 Eurorack Tape Echo Interface",
+      "offers": {
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "USD",
+        "lowPrice": "15.00"
+      }
+    }
+  },
+  {
+    "category": "cable",
+    "name": "Eurorack Modular Patch Cable 4.9ft",
+    "url": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+    "http_status": 200,
+    "retrieved_at": "2026-11-22T13:45:02.282763+00:00",
+    "html_sha256": "b0098f23599a294d97a5aec3d58b53770ec96a9cd8e8ef1879eb64a628271a3a",
+    "product_json_ld_excerpt": {
+      "@type": "Product",
+      "name": "Eurorack Modular Patch Cable 4.9ft",
+      "offers": {
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "USD",
+        "price": "4.50"
+      }
+    }
+  }
+]

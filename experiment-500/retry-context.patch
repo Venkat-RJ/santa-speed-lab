@@ -1,0 +1,121 @@
+diff --git a/src/agents/embedded-agent-runner/run/attempt-recovery.test.ts b/src/agents/embedded-agent-runner/run/attempt-recovery.test.ts
+index 5adb4ca0..d91c6bf3 100644
+--- a/src/agents/embedded-agent-runner/run/attempt-recovery.test.ts
++++ b/src/agents/embedded-agent-runner/run/attempt-recovery.test.ts
+@@ -488,7 +488,9 @@ describe("recoverEmbeddedRunAttempt", () => {
+       });
+     expect(recovery).toMatchObject({ action: "retry", lastRetryFailoverReason: "rate_limit" });
+     expect(sleepWithAbort).toHaveBeenCalledExactlyOnceWith(scenario.delayMs, undefined);
+-    expect(continueFromCurrentTranscript).toHaveBeenCalledOnce();
++    expect(continueFromCurrentTranscript).toHaveBeenCalledExactlyOnceWith(
++      expect.objectContaining({ rateLimitRetry: true }),
++    );
+     expect(onAgentEvent).toHaveBeenCalledExactlyOnceWith(
+       expect.objectContaining({
+         stream: "run_status",
+@@ -656,7 +658,7 @@ describe("recoverEmbeddedRunAttempt", () => {
+     expect(failover.advanceAuthProfile).toHaveBeenCalledOnce();
+   });
+ 
+-  it.each<[string, TransportDropScenario]>([
++  it.each<[label: string, scenario: TransportDropScenario, rateLimitRetry?: true]>([
+     ["WebSocket drop", {}],
+     ["overload before work", { noTools: true, errorMessage: "server_overloaded", diagnostics: [] }],
+     ["overload after settled tools", { errorMessage: "server_overloaded", diagnostics: [] }],
+@@ -709,6 +711,7 @@ describe("recoverEmbeddedRunAttempt", () => {
+     [
+       "rate limit",
+       { errorMessage: "429 rate limit exceeded; retry after 2 seconds", diagnostics: [] },
++      true,
+     ],
+     ["visible partial response", { content: [{ type: "text", text: "Partial" }] }],
+     [
+@@ -724,8 +727,9 @@ describe("recoverEmbeddedRunAttempt", () => {
+         },
+         diagnostics: [],
+       },
++      true,
+     ],
+-  ])("continues the existing transcript after %s", async (_label, scenario) => {
++  ])("continues the existing transcript after %s", async (_label, scenario, rateLimitRetry) => {
+     const {
+       attempt,
+       recovery,
+@@ -742,6 +746,7 @@ describe("recoverEmbeddedRunAttempt", () => {
+     expect(markOwnedTranscriptRetry).toHaveBeenCalledOnce();
+     expect(continueFromCurrentTranscript).toHaveBeenCalledExactlyOnceWith({
+       includeToolFailureInstruction: Boolean(scenario.lastToolError),
++      ...(rateLimitRetry ? { rateLimitRetry } : {}),
+       messages: attempt.messagesSnapshot,
+     });
+     expect(failoverRetryController.advanceAuthProfile).not.toHaveBeenCalled();
+diff --git a/src/agents/embedded-agent-runner/run/attempt-recovery.ts b/src/agents/embedded-agent-runner/run/attempt-recovery.ts
+index 3981897d..62225ded 100644
+--- a/src/agents/embedded-agent-runner/run/attempt-recovery.ts
++++ b/src/agents/embedded-agent-runner/run/attempt-recovery.ts
+@@ -499,6 +499,7 @@ export async function recoverEmbeddedRunAttempt(input: {
+     sessionPromptState.markOwnedTranscriptRetry();
+     sessionPromptState.continueFromCurrentTranscript({
+       includeToolFailureInstruction: Boolean(attempt.lastToolError),
++      ...(recoveryReason === "rate_limit" ? { rateLimitRetry: true } : {}),
+       messages: attempt.messagesSnapshot,
+     });
+     recordRecoveryDecision("accepted", "transient_retry");
+diff --git a/src/agents/embedded-agent-runner/run/attempt-session-prepare.ts b/src/agents/embedded-agent-runner/run/attempt-session-prepare.ts
+index a4e64610..5b6cf957 100644
+--- a/src/agents/embedded-agent-runner/run/attempt-session-prepare.ts
++++ b/src/agents/embedded-agent-runner/run/attempt-session-prepare.ts
+@@ -289,6 +289,7 @@ export async function prepareEmbeddedAttemptAgentSession(input: {
+ type SessionBoundaryAttempt = Pick<
+   EmbeddedRunAttemptParams,
+   | "config"
++  | "continuation"
+   | "inputProvenance"
+   | "onUserMessagePersistenceInvalidated"
+   | "operation"
+@@ -334,7 +335,11 @@ export async function prepareEmbeddedAttemptSessionBoundary(input: {
+   }
+ 
+   let repairedTarget: ReturnType<typeof sessionManager.getSessionTarget>;
+-  const orphanRepair = preserveExactPrompt
++  // A same-turn rate-limit retry already loads the admitted task and settled tool results.
++  // Folding its previous internal user leaf into the new prompt grows the request on every retry.
++  const preserveRetryHistory =
++    attempt.skipPreparedUserTurnMessage && attempt.continuation?.rateLimitRetry;
++  const orphanRepair = preserveExactPrompt || preserveRetryHistory
+     ? undefined
+     : await withSessionManagerWrite(sessionManager, async () => {
+         input.abortSignal?.throwIfAborted();
+diff --git a/src/agents/embedded-agent-runner/run/session-prompt-state.ts b/src/agents/embedded-agent-runner/run/session-prompt-state.ts
+index fbde4f1d..d72c2009 100644
+--- a/src/agents/embedded-agent-runner/run/session-prompt-state.ts
++++ b/src/agents/embedded-agent-runner/run/session-prompt-state.ts
+@@ -295,6 +295,7 @@ export async function createEmbeddedRunSessionPromptState(input: {
+     },
+     continueFromCurrentTranscript: (options?: {
+       includeToolFailureInstruction?: boolean;
++      rateLimitRetry?: true;
+       messages?: NonNullable<EmbeddedRunAttemptParams["continuation"]>["messages"];
+     }) => {
+       // Raw model runs load no transcript history; the original prompt is their only task context.
+@@ -304,6 +305,7 @@ export async function createEmbeddedRunSessionPromptState(input: {
+       if (options?.messages) {
+         continuation = {
+           prompt: params.prompt,
++          ...(options.rateLimitRetry ? { rateLimitRetry: true } : {}),
+           messages: [...(continuation?.messages ?? []), ...options.messages],
+         };
+       }
+diff --git a/src/agents/embedded-agent-runner/run/types.ts b/src/agents/embedded-agent-runner/run/types.ts
+index 4b909b59..0b70bc8a 100644
+--- a/src/agents/embedded-agent-runner/run/types.ts
++++ b/src/agents/embedded-agent-runner/run/types.ts
+@@ -239,6 +239,8 @@ export type EmbeddedRunAttemptParams = EmbeddedRunAttemptBase & {
+   pluginRuntimeRefreshMessages?: AgentMessage[];
+   /** Host-owned same-turn recovery context; never a new user turn or execution authority. */
+   continuation?: {
++    /** A provider rate limit retries against the existing transcript projection. */
++    rateLimitRetry?: true;
+     /** Original current request, retained outside bounded historical projections. */
+     prompt: string;
+     /** Settled attempt snapshots, in order, including completed tool calls and results. */

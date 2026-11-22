@@ -1,0 +1,3 @@
+* text=auto eol=lf
+*.bundle binary
+experiment-500/retry-context.patch whitespace=-blank-at-eol
