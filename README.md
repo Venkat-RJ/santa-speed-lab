@@ -15,7 +15,9 @@ The official OpenClaw speed patch reports the arithmetic mean of the measured mo
 
 ## Demo and research graph
 
-[**Watch the 29-second Trackinizer replay**](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/research-visuals-2026-11-23/trackinizer-blog-29s.mp4) · [**Watch the saved OpenClaw session**](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/experiment-500-proof-2026-11-23/new-cli-peak-archived-session.mp4)
+https://github.com/user-attachments/assets/13f70c1c-1f45-4d9a-88cc-3b838202b82f
+
+[Download the 29-second Trackinizer replay](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/research-visuals-2026-11-23/trackinizer-blog-29s.mp4) · [**Watch the saved OpenClaw session**](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/experiment-500-proof-2026-11-23/new-cli-peak-archived-session.mp4)
 
 ![OpenClaw showing the five Eurorack product links and its rounded server TPS readout of 1,375 mean and 1,795 p90](docs/assets/openclaw-peak-result.png)
 
