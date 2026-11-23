@@ -1,34 +1,40 @@
 # Santa Speed Lab
 
-Our entry for Cerebras’s Santa’s Speedy Shopper Speed Bounty.
+Venkateshwar Reddy Jambula and Gabriel used Kimi K3.1 Pro on Cerebras with OpenClaw to find five in-stock Christmas gifts for a Eurorack musician. This repository contains the prompts, settings, and timing evidence behind our entry for the Santa’s Speedy Shopper Speed Bounty.
 
-[Venkat](https://x.com/venkatGoku) and [Gabriel](https://x.com/areseyefu) used OpenClaw with Kimi K3.1 Pro on Cerebras to find five in-stock Christmas gifts for a Eurorack musician from a live retailer.
+## Results
 
-## Highest verified score
-
-**1,375.40 official mean TPS** across two model calls. The final answer reached **1,794.66 TPS**. OpenClaw found five in-stock Eurorack gifts and returned their product links using the Experiment #500 prompt.
-
-| Run | Official mean TPS | Final-call TPS | Evidence |
+| Run | Session mean TPS | Final-call TPS | Evidence |
 | --- | ---: | ---: | --- |
-| Highest verified CLI run | **1,375.40** | **1,794.66** | [Cerebras timing receipts](replay-archive/milestones/new-cli-peak/provider-stream-receipts.jsonl) |
-| Highest run recorded live from prompt to products | **1,123.45** | **1,230.92** | [Uncut OpenClaw video](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/experiment-500-proof-2026-11-23/best-live-uncut.mp4) |
-| Immediate CLI replay | 818.27 | 815.75 | [Replay timing receipts](replay-archive/milestones/immediate-confirmation/provider-stream-receipts.jsonl) |
+| Best verified CLI run | **1,375.40** | **1,794.66** | [Timing receipts](replay-archive/milestones/new-cli-peak/provider-stream-receipts.jsonl) · [Saved session in OpenClaw](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/experiment-500-proof-2026-11-23/new-cli-peak-archived-session.mp4) |
+| Original Trackinizer Experiment #500 | 1,284.83 | 1,597.73 | [Experiment bundle](experiment-500/) |
+| Best run recorded live from prompt to products | 1,123.45 | 1,230.92 | [Uncut OpenClaw recording](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/experiment-500-proof-2026-11-23/best-live-uncut.mp4) |
+| Immediate CLI replay of the best run | 818.27 | 815.75 | [Timing receipts](replay-archive/milestones/immediate-confirmation/provider-stream-receipts.jsonl) |
 
-On the peak run, Cerebras generated 472 discovery tokens in 493.653985 ms and 156 final-answer tokens in 86.924623 ms. The peak video shows the completed CLI session reopened in OpenClaw. Its dashboard rounds the final-call rate to 1,795. [View the archived peak session](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/experiment-500-proof-2026-11-23/new-cli-peak-archived-session.mp4)
+The official OpenClaw speed patch reports the arithmetic mean of the measured model calls. Each call’s rate is its output token count divided by Cerebras server decode time. For the best CLI run, the discovery call generated 472 tokens in 493.65 ms and the final call generated 156 tokens in 86.92 ms. The OpenClaw recording shows that completed CLI session reopened in the dashboard, which rounds the final call to 1,795 TPS. The original #500 command took 18.72 seconds wall-clock.
 
-The archive indexes **80 entries and 51 recordings**, including unsuccessful attempts, setup failures and edited demos. [Browse the attempt ledger](replay-archive/README.md) · [Download the recordings](https://github.com/Venkat-RJ/santa-speed-lab/releases/tag/experiment-500-proof-2026-11-23)
+## Demo and research graph
 
-## Original Experiment #500
+- **Trackinizer replay.** The 29-second recording starts with 1,687 records. It follows Issue #202, Gabriel’s XML format in Web Result #110, the linked live-shopping test #258, and the resulting shared hypothesis in Belief #346. [See the graph still](docs/assets/trackinizer-issue-202-detail.png) · [Watch the replay](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/research-visuals-2026-11-23/trackinizer-blog-29s.mp4)
+- **TPS progression.** The chart covers 260 campaign and replay attempts. Its two lines track the best qualifying session mean and the fastest individual call. [Watch the animation](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/research-visuals-2026-11-23/swarm-tps-peak-11s.mp4)
+- **OpenClaw evidence.** The recording archive indexes 80 entries and 51 clips, including incomplete runs and setup failures. [Browse the ledger](replay-archive/) · [Download the recordings](https://github.com/Venkat-RJ/santa-speed-lab/releases/tag/experiment-500-proof-2026-11-23)
 
-| Model call | Output tokens | Cerebras decode time | TPS |
-| --- | ---: | ---: | ---: |
-| Discover products with five live searches | 474 | 487.688936 ms | 971.93 |
-| Return the five product links | 156 | 97.638830 ms | **1,597.73** |
-| **Official mean across both calls** | | | **1,284.83** |
+![TPS progression across 260 attempts, ending at 1,375.40 mean TPS and 1,794.66 TPS for the fastest call](docs/assets/cerebras-tps-chart.png)
 
-The official OpenClaw speed patch averages the two per-call decode rates. The measurement uses Cerebras’s server decode time. The recorded OpenClaw command took 18.72 seconds wall-clock. Trackinizer records the run as **Experiment #500** under **Issue #208**.
+## Verify the evidence offline
 
-## Five gifts found in the run
+From the repository root, using Python 3.9+ and Node.js 24:
+
+```sh
+python3 experiment-500/verify.py
+python3 replay-archive/verify.py
+```
+
+Start with the [Experiment #500 guide](experiment-500/README.md) for the original prompt, configuration, timing receipts, and product validation. The [replay archive](replay-archive/README.md) contains the later peak, its immediate replay, and the attempt ledger. For a live rerun, follow the guide with the pinned OpenClaw build and a Cerebras key that has access to the recorded model. As of November 23, 2026, the hackathon trial endpoint returned `model_not_found` for our key. The offline checks use saved evidence.
+
+## Five products found in the run
+
+The prompt supplied live retailer search URLs. OpenClaw discovered the individual products during the run, and the audit matched each link and its then-current stock status to the saved catalog and product-page evidence.
 
 1. [AI024 Eurorack X Filter](https://aisynthesis.com/product/ai024-eurorack-x-filter/)
 2. [AI028 Voltage Controlled Matrix Mixer](https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/)
@@ -36,15 +42,4 @@ The official OpenClaw speed patch averages the two per-call decode rates. The me
 4. [AI016 Eurorack Tape Echo Interface](https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/)
 5. [Eurorack Modular Patch Cable 4.9ft](https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/)
 
-The prompt supplied five retailer search URLs. OpenClaw found the individual products during the run. The audit confirmed each returned link and its in-stock status against both the live catalog response and the corresponding product page.
-
-## Verify or replay
-
-Run the offline checks from the repository root with Python 3.9+ and Node.js 24.
-
-```sh
-python3 experiment-500/verify.py
-python3 replay-archive/verify.py
-```
-
-**Replay on live sites** with the pinned OpenClaw source, exact prompt, configuration, and your own Cerebras key with access to the recorded model. The [replay guide](experiment-500/README.md) walks through setup and explains the saved evidence. The original follow-up, Experiment #501, verified five products at **972.95 mean TPS** and **1,319.42 peak TPS**.
+[Venkat](https://x.com/venkatGoku) · [Gabriel](https://x.com/areseyefu) · [Trackinizer](https://github.com/rekursiv-ai/trackinizer)
