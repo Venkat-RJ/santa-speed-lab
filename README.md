@@ -1,43 +1,47 @@
 # Santa Speed Lab
 
-For Cerebras’s Santa’s Speedy Shopper challenge, we used OpenClaw with Kimi K3.1 Pro to find five in-stock gifts for a Eurorack musician. Our best verified run reached **1,375.40 TPS across the session** and **1,794.66 TPS on its final call**.
+We tested how fast Kimi K3.1 Pro on Cerebras could generate answers while OpenClaw shopped for five real Christmas gifts. The project grew into a second experiment: could two independent research setups build on each other’s findings through a shared Trackinizer graph?
 
-Built by [Venkateshwar Reddy Jambula](https://x.com/venkatGoku) and [Gabriel](https://x.com/areseyefu).
+[Venkateshwar Reddy Jambula](https://x.com/venkatGoku) and [Gabriel](https://x.com/areseyefu) built this for the Cerebras Santa’s Speedy Shopper challenge.
 
-## Watch the research replay
+## The setup
+
+| Component | What we used it for |
+| --- | --- |
+| **OpenClaw 2026.10.9** | Ran the shopping task in the isolated `speed-bounty` profile on macOS arm64 with Node.js 24.22.1. We kept the organizer’s measurement patch intact. |
+| **Kimi K3.1 Pro on Cerebras** | Served the model. Experiment #500 streamed responses at temperature 0.3 and low reasoning effort. |
+| **OpenClaw `web_fetch`** | Queried AI Synthesis’s live catalog. We supplied the searches, and OpenClaw discovered the individual products during the run. |
+| **Trackinizer** | Connected the two research tracks through a shared graph hosted on Railway. Gabriel’s swarm explored output formats and decoding settings. Venkat’s agent worked on tool calls, context and multi-turn inference. |
+
+The recorded setup and the pinned build are in the [Experiment #500 replay guide](experiment-500/README.md).
+
+## What the replay shows
+
+The video starts with the full 1,687-record graph, then follows one idea across the two research tracks. **Issue #202** brings the tracks together. **Web Result #110** records Gabriel’s self-closing XML format and links it to **Experiment #258**, where Venkat tested the format in the live-shopping workflow. That experiment’s result became evidence for the shared hypothesis in **Belief #346**.
 
 https://github.com/user-attachments/assets/13f70c1c-1f45-4d9a-88cc-3b838202b82f
 
-[Download the Trackinizer research replay (29 seconds)](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/research-visuals-2026-11-23/santa-speed-lab-trackinizer-research-replay.mp4) · [**Watch the saved OpenClaw session**](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/experiment-500-proof-2026-11-23/new-cli-peak-archived-session.mp4)
+[Download the 29-second replay](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/research-visuals-2026-11-23/santa-speed-lab-trackinizer-research-replay.mp4) · [See the focused graph](docs/assets/trackinizer-issue-202-detail.png)
 
-![OpenClaw showing the five Eurorack product links and its rounded server TPS readout of 1,375 mean and 1,795 p90](docs/assets/openclaw-peak-result.png)
+## What we achieved
 
-*The verified CLI session reopened in OpenClaw. The dashboard rounds its rates and labels the second figure p90. The saved receipts give the precise session mean of 1,375.40 TPS and final-call rate of 1,794.66 TPS.*
-
-
-## Benchmark results
+Our best verified run reached **1,375.40 mean TPS** across two model calls and **1,794.66 TPS** on the final call. It returned five distinct Eurorack products whose links and then-current availability we checked against the saved retailer evidence.
 
 | Run | Session mean TPS | Final-call TPS | Evidence |
 | --- | ---: | ---: | --- |
-| Best verified CLI run | **1,375.40** | **1,794.66** | [Timing receipts](replay-archive/milestones/new-cli-peak/provider-stream-receipts.jsonl) · [Saved session in OpenClaw](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/experiment-500-proof-2026-11-23/new-cli-peak-archived-session.mp4) |
-| Original Trackinizer Experiment #500 | 1,284.83 | 1,597.73 | [Experiment bundle](experiment-500/) |
-| Best run recorded live from prompt to products | 1,123.45 | 1,230.92 | [Uncut OpenClaw recording](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/experiment-500-proof-2026-11-23/best-live-uncut.mp4) |
-| Immediate CLI replay of the best run | 818.27 | 815.75 | [Timing receipts](replay-archive/milestones/immediate-confirmation/provider-stream-receipts.jsonl) |
+| Best verified CLI run | **1,375.40** | **1,794.66** | [Cerebras timing receipts](replay-archive/milestones/new-cli-peak/provider-stream-receipts.jsonl) |
+| Original Experiment #500 | 1,284.83 | 1,597.73 | [Experiment bundle](experiment-500/) |
+| Best full live recording | 1,123.45 | 1,230.92 | [Uncut OpenClaw recording](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/experiment-500-proof-2026-11-23/best-live-uncut.mp4) |
+| Immediate CLI replay of the best run | 818.27 | 815.75 | [Replay timing receipts](replay-archive/milestones/immediate-confirmation/provider-stream-receipts.jsonl) |
 
-The official OpenClaw speed patch reports the arithmetic mean of the measured model calls. Each call’s rate is its output token count divided by Cerebras server decode time. For the best CLI run, the discovery call generated 472 tokens in 493.65 ms and the final call generated 156 tokens in 86.92 ms. The OpenClaw recording shows that completed CLI session reopened in the dashboard, which rounds the final call to 1,795 TPS. The original #500 command took 18.72 seconds wall-clock.
+![OpenClaw showing the five Eurorack product links and the server speed badge](docs/assets/openclaw-peak-result.png)
 
-## How we collaborated
+*The best CLI run reopened in OpenClaw. The dashboard shows rounded values of 1,375 mean TPS and 1,795 p90 TPS. With two calls, the patch’s p90 equals the faster call, which was the final answer in this run.* [Watch the saved session](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/experiment-500-proof-2026-11-23/new-cli-peak-archived-session.mp4)
 
-Gabriel explored output formats and decoding settings while Venkat worked on OpenClaw’s tool calls and multi-turn inference. Both used [Trackinizer](https://github.com/rekursiv-ai/trackinizer) to share findings. The replay follows one example from Gabriel’s self-closing XML format (Web Result #110) to Venkat’s live-shopping test (Experiment #258) and the shared hypothesis it informed (Belief #346). Issue #202 brings the two research tracks together. [See the focused graph](docs/assets/trackinizer-issue-202-detail.png)
+The official patch divides output tokens by Cerebras server decode time for each call, then averages the call rates. The best run generated 472 discovery tokens in 493.65 ms and 156 final-answer tokens in 86.92 ms. The lower score on the immediate replay shows how much throughput could vary under the same setup.
 
-- **TPS progression.** The chart covers 260 campaign and replay attempts. Its two lines track the best qualifying session mean and the fastest individual call. [Watch the animation](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/research-visuals-2026-11-23/swarm-tps-peak-11s.mp4)
-- **OpenClaw evidence.** The recording archive indexes 80 entries and 51 clips, including incomplete runs and setup failures. [Browse the ledger](replay-archive/) · [Download the recordings](https://github.com/Venkat-RJ/santa-speed-lab/releases/tag/experiment-500-proof-2026-11-23)
-
-![TPS progression across 260 attempts, ending at 1,375.40 mean TPS and 1,794.66 TPS for the fastest call](docs/assets/cerebras-tps-chart.png)
-
-## Five gifts OpenClaw found
-
-The prompt supplied live retailer search URLs. OpenClaw discovered the individual products during the run, and the audit matched each link and its then-current stock status to the saved catalog and product-page evidence.
+<details>
+<summary>Five gifts and product links</summary>
 
 1. [AI024 Eurorack X Filter](https://aisynthesis.com/product/ai024-eurorack-x-filter/)
 2. [AI028 Voltage Controlled Matrix Mixer](https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/)
@@ -45,13 +49,25 @@ The prompt supplied live retailer search URLs. OpenClaw discovered the individua
 4. [AI016 Eurorack Tape Echo Interface](https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/)
 5. [Eurorack Modular Patch Cable 4.9ft](https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/)
 
+</details>
+
+<details>
+<summary>TPS progression across 260 attempts</summary>
+
+![The best qualifying session mean and fastest individual call over 260 attempts](docs/assets/cerebras-tps-chart.png)
+
+The chart covers the two Venkat campaigns and later OpenClaw replays. [Watch the chart animation](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/research-visuals-2026-11-23/swarm-tps-peak-11s.mp4)
+
+</details>
+
 ## Verify or rerun
 
-From the repository root, using Python 3.9+ and Node.js 24:
+From the repository root, use Python 3.9+ and Node.js 24 to verify the saved timings and product evidence offline.
 
 ```sh
 python3 experiment-500/verify.py
 python3 replay-archive/verify.py
 ```
 
-Start with the [Experiment #500 guide](experiment-500/README.md) for the original prompt, configuration, timing receipts, and product validation. The [replay archive](replay-archive/README.md) contains the later peak, its immediate replay, and the attempt ledger. For a live rerun, follow the guide with the pinned OpenClaw build and a Cerebras key that has access to the recorded model. As of November 23, 2026, the hackathon trial endpoint returned `model_not_found` for our key. The offline checks use saved evidence.
+- [Experiment #500 replay guide](experiment-500/README.md) has the exact prompt, configuration, pinned OpenClaw build, and live rerun instructions. A live rerun needs a Cerebras key with model access. On November 23, 2026, our key received `model_not_found` from the trial endpoint.
+- [Replay archive](replay-archive/README.md) indexes 80 attempts and 51 recordings, including incomplete runs and setup failures. The [evidence release](https://github.com/Venkat-RJ/santa-speed-lab/releases/tag/experiment-500-proof-2026-11-23) contains the video files and checksums.
