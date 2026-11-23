@@ -15,7 +15,13 @@ The official OpenClaw speed patch reports the arithmetic mean of the measured mo
 
 ## Demo and research graph
 
-- **Trackinizer replay.** The 29-second recording starts with 1,687 records. It follows Issue #202, Gabriel’s XML format in Web Result #110, the linked live-shopping test #258, and the resulting shared hypothesis in Belief #346. [See the graph still](docs/assets/trackinizer-issue-202-detail.png) · [Watch the replay](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/research-visuals-2026-11-23/trackinizer-blog-29s.mp4)
+[**Watch the 29-second Trackinizer replay**](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/research-visuals-2026-11-23/trackinizer-blog-29s.mp4) · [**Watch the saved OpenClaw session**](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/experiment-500-proof-2026-11-23/new-cli-peak-archived-session.mp4)
+
+![OpenClaw showing the five Eurorack product links and its rounded server TPS readout of 1,375 mean and 1,795 p90](docs/assets/openclaw-peak-result.png)
+
+*The verified CLI session reopened in OpenClaw. The dashboard rounds its rates and labels the second figure p90. The saved receipts give the precise session mean of 1,375.40 TPS and final-call rate of 1,794.66 TPS.*
+
+- **Trackinizer replay.** The 29-second recording starts with 1,687 records. It follows Issue #202, Gabriel’s XML format in Web Result #110, the linked live-shopping test #258, and the resulting shared hypothesis in Belief #346. [See the graph still](docs/assets/trackinizer-issue-202-detail.png)
 - **TPS progression.** The chart covers 260 campaign and replay attempts. Its two lines track the best qualifying session mean and the fastest individual call. [Watch the animation](https://github.com/Venkat-RJ/santa-speed-lab/releases/download/research-visuals-2026-11-23/swarm-tps-peak-11s.mp4)
 - **OpenClaw evidence.** The recording archive indexes 80 entries and 51 clips, including incomplete runs and setup failures. [Browse the ledger](replay-archive/) · [Download the recordings](https://github.com/Venkat-RJ/santa-speed-lab/releases/tag/experiment-500-proof-2026-11-23)
 
