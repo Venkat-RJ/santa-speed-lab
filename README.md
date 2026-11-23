@@ -71,3 +71,29 @@ python3 replay-archive/verify.py
 
 - [Experiment #500 replay guide](experiment-500/README.md) has the exact prompt, configuration, pinned OpenClaw build, and live rerun instructions. A live rerun needs a Cerebras key with model access. On November 23, 2026, our key received `model_not_found` from the trial endpoint.
 - [Replay archive](replay-archive/README.md) indexes 80 attempts and 51 recordings, including incomplete runs and setup failures. The [evidence release](https://github.com/Venkat-RJ/santa-speed-lab/releases/tag/experiment-500-proof-2026-11-23) contains the video files and checksums.
+
+## Citing
+
+If you use the benchmark, replay archive, or research visuals, please cite Santa Speed Lab.
+
+```bibtex
+@misc{jambula2026santaspeedlab,
+  title        = {{Santa Speed Lab}: The {Cerebras} Santa's Speedy Shopper Benchmark},
+  author       = {Jambula, Venkateshwar Reddy and {Gabriel}},
+  year         = {2026},
+  howpublished = {GitHub},
+  url          = {https://github.com/Venkat-RJ/santa-speed-lab}
+}
+```
+
+If you use Trackinizer itself, please cite its authors.
+
+```bibtex
+@misc{rekursivai2026trackinizer,
+  title        = {{Trackinizer}: Epistemological database for agent and human efforts, beliefs, and findings},
+  author       = {Dillon, Joshua V. and Kondratyuk, Dan},
+  year         = {2026},
+  howpublished = {GitHub},
+  url          = {https://github.com/rekursiv-ai/trackinizer}
+}
+```
